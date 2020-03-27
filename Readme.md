@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Ильин](https://up.htmlacademy.ru/adaptive/19/user/202289).
-* Наставник: `Дмитрий Варганов`.
+* Наставник: `Алексей Перепелка`.
 
 ---
 
