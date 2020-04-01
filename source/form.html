@@ -30,6 +30,86 @@
     <main class="page-main">
       <section class="form">
         <h1 class="form__header">Конкурс на самое безбашенное путешествие с PINK</h1>
+        <p class="form__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <form class="form__description" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__description-profile profile">
+            <p class="profile__data">
+              <label for="family">фамилия:</label>
+              <input class="profile__info" type="text" name="family" id="family" placeholder="Укажите фамилию *" required="">
+            </p>
+            <p class="profile__data">
+              <label for="name">имя:</label>
+              <input class="profile__info" type="text" name="name" id="name" placeholder="Введите ваше имя *" required="">
+            </p>
+            <p class="profile__data">
+              <label for="patronymic">отчество:</label>
+              <input class="profile__info" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required="">
+            </p>
+          </div>
+          <div class="form__progress progress"></div>
+          <div class="form__action action">
+            <h2 class="action__header">ваши безбашенные достижения в путешествии</h2>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="shark" value="" id="shark" checked>
+              <label for="shark">Сделал селфи с акулой</label>
+            </p>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="beach" value="" id="beach" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </p>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="Chuck" value="" id="Chuck">
+              <label for="Chuck">Видел Чака Норриса</label>
+            </p>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="souvenirs" value="" id="souvenirs">
+              <label for="souvenirs">Накупил сувениров</label>
+            </p>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="tower" value="" id="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </p>
+            <p class="action__data">
+              <input class="action__data-info" type="checkbox" name="hotel" value="" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </p>
+          </div>
+          <div class="form__contacts contacts-data">
+            <p class="contacts-data__tel">
+                <label for="tel">номер телефона</label>
+                <input class="contacts-data__number" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" required="">
+            </p>
+            <p class="contacts-data__mail">
+              <label for="email">адрес почты</label>
+              <input class="contacts-data__email" type="email" name="email" id="email" placeholder="Введите почту *" required="">
+            </p>
+          </div>
+          <div class="form__system system">
+            <h2 class="visually-hidden">Операционная система для PINK</h2>
+            <p class="system__question">с каким приложением вы путешествовали?</p>
+            <p class="system__item">
+              <input class="system__info" type="radio" name="iOS" value="" id="iOS" checked>
+              <label for="iOS"> Pink для iOS</label>
+            </p>
+            <p class="system__item">
+              <input class="system__info" type="radio" name="android" value="" id="android">
+              <label for="android"> Pink на Android</label>
+            </p>
+            <p class="system__item">
+              <input class="system__info" type="radio" name="windows" value="" id="windows">
+              <label for="windows"> Windows phone</label>
+            </p>
+          </div>
+          <div class="form__comments comments">
+            <h2 class="visually-hidden">Оценка приложения PINK</h2>
+            <p class="comments__preview">опишите свои эмоции</p>
+            <textarea class="comments__description" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <div class="form__link-wrapper link-wrapper">
+            <a class="link-wrapper__link" href="#">отправить форму</a>
+            <p class="link-wrapper__note">* — Обязательные поля</p>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
