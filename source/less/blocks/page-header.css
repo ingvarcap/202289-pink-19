@@ -1,0 +1,18 @@
+.page-header {
+  background-color: #1d2632;
+  outline: 2px solid red;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+.site-list__item-link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}

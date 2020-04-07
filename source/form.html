@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,22 +16,22 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">главная</a>
+            <a class="site-list__item-link" href="index.html">главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">фотографии</a>
+            <a class="site-list__item-link" href="photo.html">фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>конкурс</a>
+            <a class="site-list__item-link">конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">html academy</a>
+            <a class="site-list__item-link" href="#">html academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="form">
+      <section class="form inner">
         <h1 class="form__header">Конкурс на самое безбашенное путешествие с PINK</h1>
         <p class="form__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         <form class="form__description" action="https://echo.htmlacademy.ru" method="POST">
@@ -112,7 +115,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer inner">
       <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Логотип приложения">
       <div class="page-footer__social social">
         <ul class="social__list">
