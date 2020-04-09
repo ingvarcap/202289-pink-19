@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*::before {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*::after {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.page-header {
+  background-color: red;
+}
