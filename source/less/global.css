@@ -2,9 +2,10 @@ html {
   webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 400;
   color: #1d2631;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
@@ -12,9 +13,10 @@ html {
 body {
   font-family: "Opensans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 400;
   color: #1d2631;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
