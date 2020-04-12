@@ -13,3 +13,47 @@
   font-weight: 300;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
+.profile__name {
+  color: #d22856;
+  text-transform: uppercase;
+}
+.profile__info::placeholder {
+  font-size: 18px;
+  color: #283645;
+}
+.action__header,
+.contacts-data__name,
+.system__question,
+.comments__preview {
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.action__name,
+.system__name {
+  font-size: 18px;
+}
+.contacts-data__number::placeholder,
+.contacts-data__email::placeholder {
+  font-size: 18px;
+  color: #283645;
+}
+.comments__description::placeholder {
+  font-family: "Opensans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.link-wrapper__link {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
+.link-wrapper__star {
+  color: #d22856;
+}
+.link-wrapper__note {
+  text-transform: uppercase;
+}
