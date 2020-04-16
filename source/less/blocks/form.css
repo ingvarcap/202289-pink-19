@@ -1,17 +1,6 @@
-.form {
-  outline: 2px solid red;
-  margin-bottom: 10px;
-}
 .action,
 .system {
   background-color: #f2f2f2;
-}
-.form__header {
-  font-size: 24px;
-  line-height: auto;
-  color: #ffffff;
-  font-weight: 300;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 .profile__name {
   color: #d22856;

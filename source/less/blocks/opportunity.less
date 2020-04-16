@@ -1,17 +1,35 @@
 .opportunity {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f2f2;
-  outline: 2px solid yellow;
 }
 
 .promo-list {
   background-color: #ffffff;
-  margin: 0;
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
 
 .promo-list__recommendation {
   font-size: 24px;
   line-height: auto;
+  width: 210px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.opportunity-list__wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-note {
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -21,4 +39,66 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+.effect {
+  display: none;
+}
+
+.effect_header {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.effect__link {
+  color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .opportunity-list__wrapper {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-note {
+    text-align: left;
+    width: 310px;
+    margin-left: 310px;
+  }
+
+  .opportunity-img {
+    position: absolute;
+    display: block;
+
+  }
+
+  .effect {
+    display: block;
+    transform: translateX(50%);
+    width: 310px;
+  }
+}
+
+@media (min-width: 960px) {
+  .opportunity-list__wrapper {
+    width: 820px;
+  }
+
+  .list-note {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 820px;
+    margin: 0;
+  }
+
+  .opportunity-img {
+    display: none;
+  }
 }

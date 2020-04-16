@@ -1,3 +1,18 @@
+* {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*::before {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*::after {
+  webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 html {
   webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -28,6 +43,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -46,4 +65,20 @@ img {
   width: 280px;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: 660px) {
+  .inner {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .inner {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

@@ -7,13 +7,15 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="inner">
+  <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo" >
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта PINK">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <a href="index.html" class="page-header__logo" >
+            <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип сайта PINK">
+          </a>
+          <button class="main-nav__toggle" type="button">X</button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__item-link">главная</a>
@@ -29,26 +31,28 @@
           </li>
         </ul>
       </nav>
+      <section class="download-app">
+        <div class="download-app__wrapper">
+          <h2 class="visually-hidden">Скачивание приложения PINK</h2>
+          <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+          <a class="download-app__link">скачать приложение</a>
+          <ul class="download-app__list list-systems">
+            <li class="list-systems__item">
+              <a class="list-system__item-link" href="#">apple</a>
+            </li>
+            <li class="list-systems__item">
+              <a class="list-system__item-link" href="#">android</a>
+            </li>
+            <li class="list-systems__item">
+              <a class="list-system__item-link" href="#">windows</a>
+            </li>
+          </ul>
+          <p class="download-app__variant-systems">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт по обработке фотографий PINK</h1>
-      <section class="download-app">
-        <h2 class="visually-hidden">Скачивание приложения PINK</h2>
-        <P class="download-app__slogan">Взгляните на жизнь иначе!</p>
-        <button class="download-app__button">скачать приложение</button>
-        <ul class="download-app__list list-systems">
-          <li class="list-systems__item">
-            <a href="#"></a>
-          </li>
-          <li class="list-systems__item">
-            <a href="#"></a>
-          </li>
-          <li class="list-systems__item">
-            <a href="#"></a>
-          </li>
-        </ul>
-        <p class="download-app__variant-systems">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
       <section class="opportunity">
         <h2 class="visually-hidden">Изменения в вашей жизни, благодаря фото-приложению PINK</h2>
         <ul class="opportunity__promo promo-list">
@@ -59,21 +63,29 @@
             <p class="promo-list__recommendation">Нам есть, что вам предложить!</p>
           </li>
         </ul>
-        <ul class="opportunity__list list-note">
-          <li class="list-note__item">
-            <h3 class="list-note__item-header">Поднимает настроение</h3>
-            <p class="list-note__item-change">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="list-note__item">
-            <h3 class="list-note__item-header">Меняет мир вокруг</h3>
-            <p class="list-note__item-change">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="list-note__item">
-            <h3 class="list-note__item-header">Заводит новых друзей</h3>
-            <p class="list-note__item-change">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="opportunity-img" src="https://via.placeholder.com/150x150" alt="Фото телефона">
+        <div class="opportunity-list__wrapper">
+          <ul class="opportunity__list list-note">
+            <li class="list-note__item">
+              <h3 class="list-note__item-header">Поднимает настроение</h3>
+              <p class="list-note__item-change">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="list-note__item">
+              <h3 class="list-note__item-header">Меняет мир вокруг</h3>
+              <p class="list-note__item-change">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="list-note__item">
+              <h3 class="list-note__item-header">Заводит новых друзей</h3>
+              <p class="list-note__item-change">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="opportunity-img" src="https://via.placeholder.com/265x300" alt="Фото телефона">
+        </div>
+        <div class="effect inner">
+          <b class="effect__header">Эффект на 24 часа</b>
+          <p class="header__test">Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
       </section>
       <section class="feedback">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
