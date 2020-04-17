@@ -1,44 +1,40 @@
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-family: "Opensans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
+  font-family: "Opensans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
-* {
-  webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-*::before {
-  webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-*::after {
-  webkit-box-sizing: inherit;
-  box-sizing: inherit;
+@font-face {
+  font-family: "Opensans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 html {
   webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 30px;
   font-weight: 400;
-  color: #111111;
+  color: #1d2631;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
 }
 body {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 30px;
   font-weight: 400;
-  color: #111111;
+  color: #1d2631;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
   overflow-x: hidden;
@@ -47,6 +43,262 @@ img {
   max-width: 100%;
   height: auto;
 }
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.inner {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
 .page-header {
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-header {
+  background-color: #1d2632;
+  outline: 2px solid red;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+.site-list__item-link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.page-main {
+  outline: 2px solid #ffffff;
+}
+.download-app {
+  background-color: #1d2632;
+  color: #ffffff;
+  font-weight: 300;
+  outline: 2px solid green;
+  margin-bottom: 10px;
+}
+.download-app__slogan {
+  font-size: 24px;
+  line-height: auto;
+  margin: 0;
+  padding: 0;
+}
+.download-app__button {
+  background-color: #1d2631;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.download-app__variant-systems {
+  margin: 0;
+  padding: 0;
+}
+.opportunity {
+  background-color: #f2f2f2;
+  outline: 2px solid yellow;
+}
+.promo-list {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.promo-list__recommendation {
+  font-size: 24px;
+  line-height: auto;
+  margin: 0;
+  padding: 0;
+}
+.list-note__item-header {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.feedback {
+  outline: 2px solid grey;
+}
+.feedback__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.price-offers {
+  outline: 2px solid black;
+  background-color: #f2f2f2;
+}
+.price-offers__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.price-offers__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+.bonus-list__item {
+  text-transform: uppercase;
+}
+.price-offers__hit {
+  text-transform: uppercase;
+}
+.contacts {
+  line-height: auto;
+  outline: 2px solid red;
+}
+.contacts__preview {
+  font-size: 24px;
+  font-weight: 300;
+}
+.communication-list__action {
+  font-size: 18px;
+  font-weight: 700;
+}
+.communication-list__type {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+}
+.photo-user {
+  outline: 2px solid green;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.photo-user__header {
+  display: block;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 300;
+  color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 90px;
+}
+.comments-list {
+  background-color: #f2f2f2;
+}
+.photo-user__intro {
+  margin: 0 auto;
+  padding: 55px 0;
+}
+.comments-list__img-day {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+.comments-list__name {
+  font-weight: 700;
+}
+.comments-list__time {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.comments-list__counter {
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.processing-photo {
+  background-color: #f2f2f2;
+}
+.button-list__btn {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.button-list__btn-post {
+  color: #d22856;
+}
+.button-list__btn-cancel {
+  color: #e3e4e4;
+}
+.page-footer {
+  outline: 2px solid orange;
+}
+.development__team {
+  line-height: 18px;
+}
+.form {
+  outline: 2px solid red;
+  margin-bottom: 10px;
+}
+.action,
+.system {
+  background-color: #f2f2f2;
+}
+.form__header {
+  font-size: 24px;
+  line-height: auto;
+  color: #ffffff;
+  font-weight: 300;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+.profile__name {
+  color: #d22856;
+  text-transform: uppercase;
+}
+.profile__info::placeholder {
+  font-size: 18px;
+  color: #283645;
+}
+.action__header,
+.contacts-data__name,
+.system__question,
+.comments__preview {
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.action__name,
+.system__name {
+  font-size: 18px;
+}
+.contacts-data__number::placeholder,
+.contacts-data__email::placeholder {
+  font-size: 18px;
+  color: #283645;
+}
+.comments__description::placeholder {
+  font-family: "Opensans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.link-wrapper__link {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
+.link-wrapper__star {
+  color: #d22856;
+}
+.link-wrapper__note {
+  text-transform: uppercase;
 }

@@ -2,26 +2,86 @@
   background-color: #1d2632;
   color: #ffffff;
   font-weight: 300;
-  outline: 2px solid green;
-  margin-bottom: 10px;
 }
 
 .download-app__slogan {
   font-size: 24px;
   line-height: auto;
+  font-weight: 300;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  height: 395px;
   margin: 0;
   padding: 0;
 }
 
-.download-app__button {
+.download-app__link {
+  display: block;
   background-color: #1d2631;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-systems {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.list-system__item-link {
+  display: block;
+  background-color: #1d2631;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .download-app__variant-systems {
+  text-align: center;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 660px) {
+  .download-app {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .download-app__wrapper {
+    width: 50%;
+  }
+
+  .download-app__slogan {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .download-app__link {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 960px) {
+  .download-app {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .download-app__slogan {
+    background-image: none;
+  }
 }

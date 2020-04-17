@@ -9,19 +9,21 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo" >
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта PINK">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <a href="index.html" class="page-header__logo" >
+            <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип сайта PINK">
+          </a>
+          <button class="main-nav__toggle" type="button">X</button>
+        </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__item-link" href="index.html">главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="photo.html">фотографии</a>
+            <a class="site-list__item-link"  href="photo.html">фотографии</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__item-link">конкурс</a>
           </li>
           <li class="site-list__item">
@@ -29,15 +31,15 @@
           </li>
         </ul>
       </nav>
+      <h1 class="form__header-form">Конкурс на самое безбашенное путешествие с PINK</h1>
     </header>
     <main class="page-main">
       <section class="form inner">
-        <h1 class="form__header">Конкурс на самое безбашенное путешествие с PINK</h1>
         <p class="form__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         <form class="form__description" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__description-profile profile">
             <p class="profile__data">
-              <label class="profile__name"for="family">фамилия:</label>
+              <label class="profile__name" for="family">фамилия:</label>
               <input class="profile__info" type="text" name="family" id="family" placeholder="Укажите фамилию *" required="">
             </p>
             <p class="profile__data">
@@ -117,7 +119,7 @@
       </section>
     </main>
     <footer class="page-footer inner">
-      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Логотип приложения">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x40" alt="Логотип приложения">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -134,7 +136,7 @@
       <div class="page-footer__development development">
         <span class="development__team">Разработано</span>
         <a href="https://htmlacademy.ru" class="development__link">
-          <img  class="development__link-img" src="https://via.placeholder.com/150x150" alt="Логотип HTMLAcademy">
+          <img  class="development__link-img" src="https://via.placeholder.com/35x30" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>

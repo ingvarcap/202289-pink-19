@@ -7,18 +7,20 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="inner">
+  <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo" >
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта PINK">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <a href="index.html" class="page-header__logo" >
+            <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип сайта PINK">
+          </a>
+          <button class="main-nav__toggle" type="button">X</button>
+        </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__item-link" href="index.html">главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__item-link">фотографии</a>
           </li>
           <li class="site-list__item">
@@ -29,18 +31,19 @@
           </li>
         </ul>
       </nav>
+      <h1 class="page-header__header-photo">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="photo-user">
-        <h1 class="photo-user__header">Фотографии пользователей</h1>
         <p class="photo-user__intro inner">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        <div class="photo-user__container-span">
+          <span class="photo-user__img-day">панорама дня</span>
+        </div>
         <ul class="photo-user__list comments-list inner">
-          <li class="comments-list__item">
-            <span class="comments-list__img-day">панорама дня</span>
-            <img class="comments-list__img comments-list__item-img--day" src="https://via.placeholder.com/150x150" alt="Фото дня">
+          <li class="comments-list__item comments-list__item-main">
             <span class="comments-list__name">Анна</span>
-            <span class="comments-list__time">(5 минут назад)</span>
             <p class="comments-list__comments">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="comments-list__time">(5 минут назад)</span>
             <p class="comments-list__counter">нравится: 215</p>
           </li>
           <li class="comments-list__item">
@@ -107,8 +110,8 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
-      <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Логотип приложения">
+    <footer class="page-footer inner">
+      <img class="page-footer__logo" src="https://via.placeholder.com/150x40" alt="Логотип приложения">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -125,7 +128,7 @@
       <div class="page-footer__development development">
         <span class="development__team">Разработано</span>
         <a href="https://htmlacademy.ru" class="development__link">
-          <img  class="development__link-img" src="https://via.placeholder.com/150x150" alt="Логотип HTMLAcademy">
+          <img  class="development__link-img" src="https://via.placeholder.com/35x30" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>
