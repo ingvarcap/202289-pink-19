@@ -2,6 +2,20 @@
   background-color: #f2f2f2;
 }
 
+.processing-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.button-list {
+  width: 280px;
+  text-align: center;
+  padding: 0;
+}
+
 .button-list__btn {
   font-size: 18px;
   line-height: 18px;
@@ -14,4 +28,38 @@
 
 .button-list__btn-cancel {
   color: #e3e4e4;
+}
+
+.tools-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  .processing-photo__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+  }
+
+  .processing-photo__wrapper-list {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+}
+
+@media (min-width: 960px) {
+  .processing-photo {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .processing-photo__wrapper {
+    width: 870px;
+  }
 }

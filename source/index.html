@@ -87,13 +87,14 @@
           <a href="#" class="effect__link">Узнать больше об исследовании</a>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback inner">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="feedback__wrapper slider">
           <ul class="feedback__list slider-list">
             <li class="feedback__list-item slider__item">
-              <p class="feedback__name">Николай Петров</p>
-              <p class="feedback__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              <span class="slider__name">Николай Петров</span>
+              <span class="slider__age-profession">25 лет, водитель трамвая</span>
+              <p class="slider__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
@@ -109,10 +110,26 @@
       </section>
       <section class="price-offers">
         <h2 class="visually-hidden">Пакеты услуг фотоприложения PINK</h2>
-        <div class="price-offers__wrapper slider">
+        <div class="price-offers__wrapper">
           <span class="price-offers__hit">хит</span>
-          <ul class="price-offers__list slider-list">
-            <li class="price-offers__item slider__item">
+          <ul class="price-offers__list">
+            <ul class="price-offers__bonus-list-tablet bonus-list-tablet">
+              <li class="bonus-list-tablet__item">Розовый фильтр</li>
+              <li class="bonus-list-tablet__item">Смайлики</li>
+              <li class="bonus-list-tablet__item">Комментарии</li>
+            </ul>
+            <li class="price-offers__item">
+              <div class="price-offers__wrapper-head">
+                <h3 class="price-offers__name">база</h3>
+                <span class="price-offers__price">1,99 USD</span>
+              </div>
+              <ul class="price-offers__bonus-list bonus-list">
+                <li class="bonus-list__item">розовый фильтр</li>
+                <li class="bonus-list__item">смайлики</li>
+                <li class="bonus-list__item">комментарии</li>
+              </ul>
+            </li>
+            <li class="price-offers__item">
               <div class="price-offers__wrapper-head">
                 <h3 class="price-offers__name">стандарт</h3>
                 <span class="price-offers__price">3,99 USD</span>
@@ -123,21 +140,10 @@
                 <li class="bonus-list__item">комментарии</li>
               </ul>
             </li>
-            <li class="price-offers__item slider__item">
+            <li class="price-offers__item">
               <div class="price-offers__wrapper-head">
-                <h3 class="price-offers__name">стандарт</h3>
-                <span class="price-offers__price">3,99 USD</span>
-              </div>
-              <ul class="price-offers__bonus-list bonus-list">
-                <li class="bonus-list__item">розовый фильтр</li>
-                <li class="bonus-list__item">смайлики</li>
-                <li class="bonus-list__item">комментарии</li>
-              </ul>
-            </li>
-            <li class="price-offers__item slider__item">
-              <div class="price-offers__wrapper-head">
-                <h3 class="price-offers__name">стандарт</h3>
-                <span class="price-offers__price">3,99 USD</span>
+                <h3 class="price-offers__name">анлим</h3>
+                <span class="price-offers__price">9,99 USD</span>
               </div>
               <ul class="price-offers__bonus-list bonus-list">
                 <li class="bonus-list__item">розовый фильтр</li>
@@ -153,13 +159,13 @@
           </p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts inner">
         <h2 class="visually-hidden">Наши контакты</h2>
         <span class="contacts__preview">Остались вопросы?</span>
         <span class="contacts__preview">Свяжитесь с нами!</span>
         <ul class="contacts__communication communication-list">
           <li class="communication-list__item">
-            <span class="communication-list__action">Звоните</span>
+            <span class="communication-list__action">Звоните:</span>
             <span class="communication-list__type">+7(812)555-66-66</span>
           </li>
           <li class="communication-list__item">
@@ -167,7 +173,7 @@
             <span class="communication-list__type">mail@htmlacademy.ru</span>
           </li>
           <li class="communication-list__item">
-            <span class="communication-list__action">Приезжайте в гости</span>
+            <span class="communication-list__action">Приезжайте в гости:</span>
             <span class="communication-list__type">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>

@@ -1,10 +1,59 @@
 .feedback {
-  outline: 2px solid grey;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.feedback__name {
+.slider__item {
+  position: relative;
+  text-align: center;
+}
+
+.slider__name {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
+
+.slider__age-profession {
+  display: none;
+}
+
+.slider-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  .slider__content {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider__age-profession {
+    position: absolute;
+    display: block;
+    line-height: 30px;
+    top: 130px;
+    left: calc(~"50% - 90px");
+
+  }
+
+  .slider__name {
+    position: absolute;
+    top: 105px;
+    left: calc(~"50% - 90px");
+  }
+}
+
+@media (min-width: 660px) {
+  .slider__item {
+    width: 700px;
+  }
+}
+
