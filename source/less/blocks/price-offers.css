@@ -47,6 +47,11 @@
   left: 50px;
   text-transform: uppercase;
 }
+.price-offers__toggles {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 660px) {
   .price-offers__list {
     width: 620px;
