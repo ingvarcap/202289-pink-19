@@ -28,7 +28,7 @@
 .opportunity-list__wrapper {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
