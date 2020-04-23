@@ -1,8 +1,12 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #1d2632;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
 }
 
@@ -13,9 +17,6 @@
   line-height: auto;
   font-weight: 300;
   color: #ffffff;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 175px;
   text-align: center;
   margin: 0;
@@ -24,9 +25,15 @@
   padding-bottom: 90px;
 }
 
+.page-header__logo-image {
+  margin-bottom: 27px;
+}
+
 .main-nav {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  background-color: #283645;
 }
 
 .main-nav__wrapper {
@@ -40,6 +47,16 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+.site-list__item {
+  border-top: 1px solid #485461;
+  box-shadow:  0 -1px 0 1px #000000;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #000000;
 }
 
 .site-list__item-link {
@@ -50,6 +67,8 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .page-header__logo {
@@ -57,10 +76,75 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
   display: block;
+  background-color: #283645;
+  color: #ffffff;
   width: 20px;
   height: 20px;
+  right: calc(~"50% - 140px");
+  top: 8px;
   margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 rgb(255, 255, 255);
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.page-header__slogan {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  height: 395px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 90px;
+}
+
+@media (max-width: 659px) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 660px) {

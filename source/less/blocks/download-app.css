@@ -1,20 +1,9 @@
 .download-app {
-  background-color: #1d2632;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2631;
   color: #ffffff;
   font-weight: 300;
-}
-.download-app__slogan {
-  font-size: 24px;
-  line-height: auto;
-  font-weight: 300;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  text-align: center;
-  height: 395px;
-  margin: 0;
-  padding: 0;
 }
 .download-app__link {
   display: block;

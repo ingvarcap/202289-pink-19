@@ -40,6 +40,9 @@ img {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
