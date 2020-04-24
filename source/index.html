@@ -10,13 +10,15 @@
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo" >
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип сайта PINK">
-          </a>
-          <button class="main-nav__toggle" type="button"></button>
-          <span class="visually-hidden">Открыть меню</span>
-        </div>
+        <a href="index.html" class="page-header__logo" >
+          <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+            <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
+        <span class="visually-hidden">Открыть меню</span>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__item-link">главная</a>
@@ -85,7 +87,6 @@
               <p class="list-note__item-change">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="opportunity-img" src="https://via.placeholder.com/265x300" alt="Фото телефона">
         </div>
         <div class="effect inner">
           <b class="effect__header">Эффект на 24 часа</b>

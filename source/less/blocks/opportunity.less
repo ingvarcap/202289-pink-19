@@ -2,8 +2,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #f2f2f2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    width: 157px;
+    height: 280px;
+    left: calc(~"50% - 78px");
+    bottom: 0;
+  }
 }
 
 .promo-list {
@@ -31,19 +40,27 @@
 }
 
 .opportunity-list__wrapper {
-  display: flex;
-  flex-direction: column;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
+  padding: 0 auto;
 }
 
 .list-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   margin-top: 90px;
+  margin-bottom: 300px;
   padding: 0;
+}
+
+.list-note__item {
+  margin-bottom: 36px;
 }
 
 .list-note__item-header {
@@ -51,6 +68,13 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+}
+
+.list-note__item-change {
+  margin: 0;
 }
 
 .effect {

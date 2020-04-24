@@ -55,18 +55,24 @@
 }
 @media (min-width: 660px) {
   .download-app {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   .download-app__wrapper {
     width: 50%;
+    margin-right: auto;
+    margin-left: 20px;
   }
   .download-app__slogan {
     background-image: none;
     background-color: transparent;
   }
   .download-app__link {
+    background-color: transparent;
+  }
+  .list-system__item-link {
     background-color: transparent;
   }
 }
