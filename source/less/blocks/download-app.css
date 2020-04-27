@@ -1,4 +1,5 @@
 .download-app {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #1d2631;
@@ -47,7 +48,7 @@
   margin: 0 auto;
 }
 .download-app__variant-systems {
-  line-height: 24px;
+  font-weight: 300;
   text-align: center;
   margin: 0;
   margin-bottom: 32px;
@@ -56,14 +57,15 @@
 @media (min-width: 660px) {
   .download-app {
     background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    left: 0;
   }
   .download-app__wrapper {
     width: 50%;
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 0;
+    margin-bottom: 115px;
+  }
+  .main-nav--closed .download-app__wrapper {
+    margin-bottom: 70px;
   }
   .download-app__slogan {
     background-image: none;
@@ -75,6 +77,9 @@
   .list-system__item-link {
     background-color: transparent;
   }
+  .download-app__variant-systems {
+    font-size: 18px;
+  }
 }
 @media (min-width: 960px) {
   .download-app {
@@ -83,5 +88,12 @@
   }
   .download-app__slogan {
     background-image: none;
+  }
+  .download-app__wrapper {
+    width: 100%;
+    margin-right: auto;
+    margin-left: -550px;
+    margin-top: 315px;
+    margin-bottom: 0;
   }
 }
