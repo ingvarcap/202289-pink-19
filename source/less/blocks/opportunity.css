@@ -39,13 +39,11 @@
   font-weight: 300;
   width: 210px;
   margin: 0 auto;
+  margin-bottom: 35px;
   padding: 0;
 }
 .promo-list__recommendation {
   margin: 0;
-}
-.promo-list__item {
-  margin-bottom: 35px;
 }
 .list-note {
   display: flex;
