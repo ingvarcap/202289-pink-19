@@ -18,21 +18,23 @@
     line-height: 150px;
     font-weight: 700;
     color: #d22856;
-    top: 51px;
-    left: 77px;
-    border: 15px solid #d22856;
+    top: 34px;
+    left: 50px;
+    padding: 0 27px;
+    border: 13px solid #d22856;
     border-radius: 50%;
-    padding: 0 21px;
+    z-index: 10;
   }
 
   .effect::after {
     position: absolute;
     content: "";
     background-image: url("../img/icon-timer.svg");
-    width: 298px;
-    height: 345px;
-    top: -55px;
-    left: 20px;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 280px;
+    top: -35px;
+    left: 28px;
   }
 
   .effect__article {
@@ -68,12 +70,14 @@
     margin: 0;
   }
 
-  .effect::after {
-    top: -10px;
+  .effect::before {
+    top: 72px;
+    left: 50px;
   }
 
-  .effect::before {
-    top: 95px;
+  .effect::after {
+    top: 5px;
+    left: 28px;
   }
 
   .effect__article {

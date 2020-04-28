@@ -2,7 +2,6 @@
 .form__header-form {
   display: block;
   font-size: 24px;
-  line-height: auto;
   font-weight: 300;
   color: #ffffff;
   height: 175px;
@@ -20,7 +19,8 @@
   margin-bottom: 27px;
   z-index: 10;
 }
-.main-nav {
+.main-nav--index,
+.main-nav--photo {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,8 @@
   background-repeat: no-repeat;
   background-position: 0 300px;
 }
-.main-nav::before {
+.main-nav--index::before,
+.main-nav--photo::before {
   position: absolute;
   content: "";
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -39,6 +40,10 @@
   height: 286px;
   left: calc(50% - 160px);
   bottom: 280px;
+}
+.main-nav--photo::before {
+  content: "";
+  background-image: none;
 }
 .site-list {
   background-color: #283645;
@@ -145,13 +150,14 @@
   }
 }
 @media (min-width: 660px) {
-  .main-nav {
+  .main-nav--index,
+  .main-nav--photo {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
   }
-  .main-nav::before {
+  .main-nav--index::before {
     position: absolute;
     content: "";
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -162,6 +168,10 @@
     height: 545px;
     left: calc(50% - 345px);
     bottom: -35px;
+  }
+  .main-nav--photo::before {
+    content: "";
+    background-image: none;
   }
   .page-header__logo {
     margin: 0;
@@ -182,9 +192,6 @@
     margin-right: auto;
     margin-left: 60px;
     padding-top: 100px;
-  }
-  .page-header__header-photo {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
   .form__header-form {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -217,12 +224,6 @@
     background-size: cover;
     height: 853px;
   }
-  .form__header-form {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
-  .page-header__header-photo {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
   .main-nav {
     width: 940px;
     display: flex;
@@ -232,10 +233,10 @@
     background-color: transparent;
     background-image: none;
   }
-  .main-nav .inner {
+  .main-nav--index .inner {
     width: 300px;
   }
-  .main-nav::before {
+  .main-nav--index::before {
     position: absolute;
     content: "";
     background-image: url("../img/iphone-hand-desktop@1x.png");
@@ -255,5 +256,9 @@
     justify-content: space-between;
     background-color: transparent;
     width: 620px;
+  }
+  .site-list__item {
+    border: none;
+    box-shadow: none;
   }
 }

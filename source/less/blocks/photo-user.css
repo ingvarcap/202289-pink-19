@@ -1,5 +1,4 @@
 .photo-user {
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -11,46 +10,97 @@
   margin-bottom: 20px;
 }
 .photo-user__intro {
-  margin: 0 auto;
-  padding: 55px 0;
+  line-height: 30px;
+  text-align: center;
+  padding: 50px 15px;
 }
 .photo-user__container-span {
   position: relative;
   height: 140px;
-  background-image: url("../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .photo-user__img-day {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #d22856;
+  margin-right: 20px;
+  padding: 7px 20px;
+}
+.comments-list__item-article {
+  padding: 10px 0 25px 15px;
+}
+.comments-list__comments {
+  margin: 0;
+  padding-bottom: 11px;
 }
 .comments-list__name {
   font-weight: 700;
 }
 .comments-list__time {
+  font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
 }
 .comments-list__counter {
+  position: relative;
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+  margin: 0;
+}
+.comments-list__counter::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-heart.svg");
+  width: 13px;
+  height: 11px;
+  top: 5px;
+  right: 35px;
 }
 .photo-user__prison {
   text-align: center;
 }
+.comments-list__img {
+  width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+}
 @media (min-width: 660px) {
+  .photo-user__container-span {
+    height: 510px;
+  }
+  .comments-list__img--main {
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo-user__intro {
+    padding: 100px 120px 80px 120px;
+  }
+  .photo-user__img-day {
+    top: 55px;
+  }
+  .comments-list__comments {
+    padding-right: 13px;
+    min-height: 60px;
+  }
+  .comments-list__item-article {
+    padding: 25px 13px 25px 15px;
+  }
   .comments-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 620px;
+  }
+  .comments-list__img {
+    min-height: 510px;
+    max-height: 510px;
   }
   .comments-list__item {
     width: 300px;
@@ -62,6 +112,9 @@
 @media (min-width: 960px) {
   .comments-list {
     width: 940px;
+  }
+  .photo-user__intro {
+    padding: 100px 222px;
   }
   .comments-list__item-main {
     width: 940px;
