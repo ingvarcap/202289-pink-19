@@ -31,9 +31,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.main-nav__toggle {
-  color: #ffffff;
-}
 .site-list {
   display: flex;
   flex-direction: column;
@@ -126,7 +123,7 @@
   background-position: center bottom;
 }
 .main-nav--opened .page-header--photo__header {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -195,7 +192,7 @@
     background-size: auto, cover;
   }
   .main-nav--opened .page-header--photo__header {
-    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
   }
   .page-header--photo__header h1 {
