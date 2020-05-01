@@ -9,63 +9,78 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--index main-nav--opened main-nav--nojs">
-        <div class="inner">
-          <a href="index.html" class="page-header__logo" >
-            <picture>
-              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
-              <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button"></button>
-        </div>
-        <div class="main-nav__wrapper-list">
-          <span class="visually-hidden">Открыть меню</span>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="photo.html">фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="#">html academy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="inner">
-          <p class="page-header__slogan inner">Взгляните на жизнь иначе!</p>
-        </div>
-        <section class="download-app">
-          <div class="inner">
-            <div class="download-app__wrapper">
-              <h2 class="visually-hidden">Скачивание приложения PINK</h2>
-              <a class="download-app__link">Скачать приложение</a>
-              <ul class="download-app__list list-systems">
-                <li class="list-systems__item">
-                  <a class="list-system__item-link" href="#">
-                    <img src="../img/logo-apple.svg" alt="apple">
-                  </a>
-                </li>
-                <li class="list-systems__item">
-                  <a class="list-system__item-link" href="#">
-                    <img src="../img/logo-android.svg" alt="android">
-                  </a>
-                </li>
-                <li class="list-systems__item">
-                  <a class="list-system__item-link" href="#">
-                    <img src="../img/logo-microsoft.svg" alt="microsoft">
-                  </a>
-                </li>
-              </ul>
-              <p class="download-app__variant-systems">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <!--Добавил блок menu, для того чтобы расположить хедер на десктопной верстке, по хорошему,
+        это должен быть nav, в котором не должно быть лишних элементов-->
+        <div class="menu">
+          <div class="menu-wrapper">
+            <div class="main-nav__logo-block">
+              <div class="inner">
+                <a href="index.html" class="page-header__logo" >
+                  <picture>
+                    <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+                    <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
+                    <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
+                  </picture>
+                </a>
+                <button class="main-nav__toggle" type="button"></button>
+              </div>
             </div>
           </div>
-        </section>
+
+          <div class="main-nav__wrapper-list">
+            <span class="visually-hidden">Открыть меню</span>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__item-link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="main-nav__wrapper">
+            <div class="page-header__slogan">
+              <p>Взгляните на жизнь иначе!</p>
+            </div>
+            <!--<div class="inner">-->
+            <!--<p class=" inner">Взгляните на жизнь иначе!</p>-->
+            <!--</div>-->
+            <section class="download-app">
+              <div class="inner">
+                <div class="download-app__wrapper">
+                  <h2 class="visually-hidden">Скачивание приложения PINK</h2>
+                  <a class="download-app__link">Скачать приложение</a>
+                  <ul class="download-app__list list-systems">
+                    <li class="list-systems__item">
+                      <a class="list-system__item-link" href="#">
+                        <img src="../img/logo-apple.svg" alt="apple">
+                      </a>
+                    </li>
+                    <li class="list-systems__item">
+                      <a class="list-system__item-link" href="#">
+                        <img src="../img/logo-android.svg" alt="android">
+                      </a>
+                    </li>
+                    <li class="list-systems__item">
+                      <a class="list-system__item-link" href="#">
+                        <img src="../img/logo-microsoft.svg" alt="microsoft">
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="download-app__variant-systems">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+              </div>
+            </section>
+          </div>
       </nav>
     </header>
     <main class="page-main">

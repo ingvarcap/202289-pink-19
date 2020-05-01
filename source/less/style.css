@@ -95,6 +95,20 @@ a {
     padding: 0;
   }
 }
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .container {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+}
 .page-header__header-photo,
 .form__header-form {
   display: block;
@@ -964,6 +978,8 @@ a {
 }
 .comments-list__img {
   width: 100%;
+  min-height: 180px;
+  max-height: 180px;
 }
 @media (min-width: 660px) {
   .photo-user__container-span {
@@ -992,6 +1008,10 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 620px;
+  }
+  .comments-list__img {
+    min-height: 510px;
+    max-height: 510px;
   }
   .comments-list__item {
     width: 300px;
