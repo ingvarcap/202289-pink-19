@@ -388,7 +388,7 @@ a {
   width: 280px;
   margin: 0 auto;
 }
-.download-app__link {
+.download-app__btn {
   display: block;
   background-color: #1d2631;
   font-size: 18px;
@@ -449,7 +449,7 @@ a {
     background-image: none;
     background-color: transparent;
   }
-  .download-app__link {
+  .download-app__btn {
     background-color: transparent;
   }
   .list-system__item-link {

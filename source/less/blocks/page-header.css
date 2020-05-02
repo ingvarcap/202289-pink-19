@@ -22,9 +22,8 @@
   position: relative;
 }
 .main-nav__logo-block {
-  height: 63px;
+  height: 70px;
   padding: 20px 20px;
-  z-index: 1;
 }
 .main-nav__logo-block .inner {
   display: flex;
@@ -38,15 +37,17 @@
   margin: 0;
   text-transform: uppercase;
   background-color: #283645;
-  font-size: 18px;
 }
 .site-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
   height: 63px;
   border-top: 1px solid #485461;
-  box-shadow: 0 -1px 0 1px #000000;
+  box-shadow: 0 0 0 1px #000000;
 }
 .site-list__item:last-child {
   border-bottom: 1px solid #000000;
@@ -71,7 +72,7 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: calc(50% - 2px);
+  top: calc(50% - 5px);
   width: 26px;
   height: 4px;
   background-color: #ffffff;
@@ -88,7 +89,7 @@
 .main-nav--opened .page-header__slogan {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: auto, cover;
-  background-position: bottom center, center;
+  background-position: bottom left;
 }
 .main-nav--closed .site-list {
   display: none;
@@ -110,9 +111,9 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 #ffffff;
 }
 .page-header__slogan {
-  height: 396px;
+  height: 398px;
   width: 100%;
-  padding: 25px 20px 0;
+  padding: 1px 20px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -120,7 +121,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
 }
 .main-nav--opened .page-header--photo__header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -222,8 +223,8 @@
   }
   .page-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
   .page-header--photo {
@@ -242,8 +243,11 @@
   .main-nav--opened .page-header__slogan {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 70px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: right bottom;
+    background-size: 100%;
     padding-left: 82px;
+    margin-bottom: 28px;
   }
   .main-nav--opened .page-header__slogan p {
     margin: 0;
@@ -266,11 +270,24 @@
     align-items: center;
     background-color: transparent;
     width: 620px;
-    height: 100px;
   }
   .site-list__item {
-    text-transform: capitalize;
     border: none;
     box-shadow: none;
+  }
+  .site-list__item a {
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .site-list__item--active a {
+    border-bottom: 2px solid #ffffff;
+  }
+  .site-list__item a:hover {
+    color: #d22856;
+  }
+  .site-list__item a:active {
+    color: #ffffff;
+    opacity: 0.3;
   }
 }
