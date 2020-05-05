@@ -184,7 +184,7 @@
     width: 240px;
     text-align: center;
     margin-right: auto;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 32px;
   }
   .main-nav--closed .page-header__slogan p {
