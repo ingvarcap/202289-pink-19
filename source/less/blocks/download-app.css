@@ -26,16 +26,16 @@
 }
 .download-app__btn {
   display: block;
+  font-family: "Open Sans", "Arial", sans-serif;
   background-color: #1d2631;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  width: 280px;
-  padding: 17px 30px;
+  padding: 14px 35px;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 36px;
   margin-bottom: 32px;
   border: 3px solid #ffffff;
   border-radius: 45px;
@@ -48,16 +48,17 @@
   color: #f2ced5;
   background-color: #ffffff;
 }
-.download-app__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.main-nav--closed .download-app__btn {
+  margin-top: 29px;
 }
 .list-systems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  margin-bottom: 17px;
-  padding: 0 15px;
+  margin-bottom: 21px;
+  padding: 0 38px;
 }
 .list-system__item-link {
   display: block;
@@ -97,13 +98,37 @@
     background-color: transparent;
   }
   .download-app__btn {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
     background-color: transparent;
+    width: 300px;
+    padding: 13px 30px;
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 47px;
+  }
+  .main-nav--closed .download-app__btn {
+    margin-top: 28px;
+  }
+  .list-systems {
+    width: 205px;
+    margin: 0;
+    margin-left: 47px;
+    margin-bottom: 37px;
+    padding: 0;
   }
   .list-system__item-link {
     background-color: transparent;
   }
   .download-app__variant-systems {
     font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+    margin: 0;
+    margin-right: auto;
   }
 }
 @media (min-width: 660px) and (min-width: 660px) {
@@ -120,11 +145,14 @@
   .download-app {
     background-image: none;
     background-color: transparent;
+    margin-top: -407px;
   }
   .download-app__btn {
+    font-size: 21px;
+    line-height: 18px;
     margin: 0;
-    margin-left: 70px;
     margin-right: auto;
+    padding: 17px 0;
   }
   .download-app__slogan {
     background-image: none;
@@ -139,16 +167,15 @@
   .list-systems {
     display: flex;
     justify-content: space-between;
-    width: 210px;
-    margin-left: 100px;
+    width: 202px;
+    margin-left: 50px;
     margin-right: auto;
-    margin-top: 42px;
+    margin-top: 65px;
   }
   .download-app__variant-systems {
     width: 300px;
     margin: 0;
-    margin-left: 60px;
     margin-right: auto;
-    margin-top: 45px;
+    margin-top: 54px;
   }
 }

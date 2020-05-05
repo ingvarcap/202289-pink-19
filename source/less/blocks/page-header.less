@@ -92,7 +92,7 @@
 .main-nav--opened .page-header__slogan {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: auto, cover;
-  background-position: center bottom, center;
+  background-position: left bottom, center bottom;
 }
 
 .main-nav--closed .site-list {
@@ -110,8 +110,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -25px;
+  top: -2px;
+  left: -14px;
   width: 50px;
   height: 4px;
   background-color: #ffffff;
@@ -119,7 +119,7 @@
 }
 
 .page-header__slogan {
-  height: 390px;
+  height: 392px;
   width: 100%;
   padding: 1px 20px 0;
   font-size: 24px;
@@ -129,13 +129,17 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
 }
 
 .page-header__slogan p {
   width: 225px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 25px;
+}
+
+.main-nav--closed .page-header__slogan p {
+  margin-top: 20px;
 }
 
 //PHOTO
@@ -158,11 +162,12 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .main-nav {
     position: relative;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
+    background-position: center;
   }
 
   .main-nav__logo-block {
@@ -185,28 +190,35 @@
 
   .page-header__slogan {
     .container();
-    height: 629px;
-    padding: 64px 0 0 32px;
-    text-align: left;
-    background-image: none;
     font-size: 40px;
     line-height: 48px;
+    text-align: left;
+    background-image: none;
+    height: 620px;;
+    padding: 64px 0 0 32px;
   }
 
   .page-header__slogan p {
     width: 240px;
     text-align: center;
+    margin-right: auto;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+
+  .main-nav--closed .page-header__slogan p {
+    margin-top: 28px;
   }
 
   .main-nav__wrapper {
-    height: 629px;
+    height: 620px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom;
   }
 
   .main-nav--opened {
-    background: none;
+    background-image: none;
   }
 
   .main-nav--opened .page-header__slogan {
@@ -216,7 +228,7 @@
   .main-nav--opened .main-nav__wrapper {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom, center;
     background-size: auto, cover;
   }
 
@@ -233,15 +245,16 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: @desktop-width) {
   .menu {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .menu-wrapper__main {
     .container();
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -263,7 +276,8 @@
     line-height: 60px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     height: 745px;
-    padding-left: 82px;
+    padding-top: 108px;
+    padding-left: 30px;
     background-position: left bottom;
   }
 
@@ -273,6 +287,8 @@
 
   .main-nav--opened .main-nav__logo-block {
     background-color: transparent;
+    margin: 0;
+    padding: 0;
   }
 
   .main-nav__toggle {
@@ -303,6 +319,7 @@
   }
 
   .site-list__item {
+    font-weight: 400;
     border: none;
     box-shadow: none;
   }
