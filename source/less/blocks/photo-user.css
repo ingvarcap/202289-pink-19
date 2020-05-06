@@ -6,13 +6,16 @@
   background-color: #ffffff;
 }
 .comments-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
 .photo-user__intro {
   line-height: 30px;
   text-align: center;
-  padding: 50px 15px;
+  padding: 47px 15px;
 }
 .photo-user__container-span {
   position: relative;
@@ -23,7 +26,7 @@
 .photo-user__img-day {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 4px;
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
@@ -52,6 +55,8 @@
   color: #d22856;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 2px;
+  padding-left: 34px;
 }
 .comments-list__counter::before {
   position: absolute;
@@ -59,15 +64,14 @@
   background-image: url("../img/icon-heart.svg");
   width: 13px;
   height: 11px;
-  top: 5px;
-  right: 35px;
+  top: 9px;
+  left: 4px;
 }
 .photo-user__prison {
   text-align: center;
 }
 .comments-list__img {
   width: 100%;
-  min-height: 180px;
   max-height: 180px;
 }
 @media (min-width: 660px) {
@@ -75,22 +79,40 @@
     height: 510px;
   }
   .comments-list__img--main {
-    height: 510px;
+    min-height: 510px;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .photo-user__intro {
-    padding: 100px 120px 80px 120px;
+    font-size: 18px;
+    padding: 95px 90px 75px 90px;
   }
   .photo-user__img-day {
+    right: 3px;
     top: 55px;
   }
   .comments-list__comments {
-    padding-right: 13px;
-    min-height: 60px;
+    padding: 0;
   }
   .comments-list__item-article {
-    padding: 25px 13px 25px 15px;
+    height: 150px;
+    padding: 22px 13px 25px 28px;
+  }
+  .comments-list__comments--main {
+    height: 120px;
+  }
+  .comments-list__item-article-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .comments-list__item-article-wrapper .comments-list__counter {
+    padding-right: 46px;
+    padding-top: 4px;
+  }
+  .comments-list__item-article-wrapper .comments-list__counter::before {
+    top: 9px;
+    right: 16px;
   }
   .comments-list {
     display: flex;
@@ -99,7 +121,7 @@
     width: 620px;
   }
   .comments-list__img {
-    min-height: 510px;
+    height: 300px;
     max-height: 510px;
   }
   .comments-list__item {
@@ -107,6 +129,11 @@
   }
   .comments-list__item-main {
     width: 620px;
+    margin-bottom: 50px;
+  }
+  .comments-list__counter::before {
+    top: 6px;
+    right: 19px;
   }
 }
 @media (min-width: 960px) {
@@ -114,9 +141,22 @@
     width: 940px;
   }
   .photo-user__intro {
-    padding: 100px 222px;
+    padding: 87px 160px;
   }
   .comments-list__item-main {
     width: 940px;
+  }
+  .comments-list__item {
+    margin-bottom: 55px;
+  }
+  .comments-list__comments--main {
+    height: 95px;
+  }
+  .photo-user__img-day {
+    top: 52px;
+    right: 112px;
+  }
+  .comments-list__img {
+    height: 400px;
   }
 }

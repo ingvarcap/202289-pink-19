@@ -146,8 +146,9 @@
 
 .main-nav--opened .page-header--photo__header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;
   width: 100%;
 }
 
@@ -155,7 +156,7 @@
   height: 170px;
   width: 280px;
   margin: 0 auto;
-  padding: 25px 20px 0;
+  padding: 30px 20px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -166,8 +167,8 @@
   .main-nav {
     position: relative;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   .main-nav__logo-block {
@@ -228,20 +229,25 @@
   .main-nav--opened .main-nav__wrapper {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: bottom, center;
-    background-size: auto, cover;
+    background-size: auto, auto;
   }
 
   .main-nav--opened .page-header--photo__header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
-  .page-header--photo__header h1 {
+   .page-header--photo__header h1 {
     font-size: 50px;
-    line-height: 56px;
+    line-height: 60px;
     width: 660px;
     height: 330px;
+    padding: 73px 20px 0;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    top: 2px;
   }
 }
 
@@ -262,13 +268,17 @@
   .main-nav--opened .page-header--photo__header {
     background-image: none;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
-    padding: 0 auto;
+    margin: 0 auto;
   }
 
   .page-header--photo__header h1 {
     height: 280px;
+    padding: 68px 20px 0;
+  }
+
+  .page-header--photo__header--contest h1 {
+    width: 940px;
   }
 
   .main-nav--opened .page-header__slogan {
@@ -303,8 +313,11 @@
     height: 855px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: center top;
+  }
+
+  .main-nav--photo {
+    height: 395px;
   }
 
   .site-list {
@@ -330,8 +343,8 @@
 
   .site-list__item a {
     text-transform: capitalize;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 3px;
   }
 
   .site-list__item--active a {
