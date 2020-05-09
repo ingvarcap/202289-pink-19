@@ -4,27 +4,6 @@
   flex-direction: column;
   background-color: #f2f2f2;
 }
-.opportunity::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  width: 157px;
-  height: 280px;
-  left: calc(50% - 78px);
-  bottom: 0;
-}
-.opportunity::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-size: 101% auto;
-  background-position: 50% 0;
-  width: 1200px;
-  height: 94px;
-  top: 183px;
-  left: 0;
-}
 .promo-list {
   background-color: #ffffff;
   text-align: center;
@@ -45,6 +24,12 @@
 .promo-list__recommendation {
   margin: 0;
 }
+.opportunity__list-wrapper {
+  background-image: url("../img/bg-triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
+  background-position: top center, center 120%;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+}
 .list-note {
   display: flex;
   flex-direction: column;
@@ -52,7 +37,6 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 80px;
-  margin-bottom: 284px;
   padding: 0;
 }
 .list-note__item {
@@ -71,17 +55,6 @@
   margin: 0;
 }
 @media (min-width: 660px) {
-  .opportunity::before {
-    top: 193px;
-    height: 100px;
-  }
-  .opportunity::after {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    width: 268px;
-    height: 481px;
-    top: 246px;
-    left: calc(50% - 310px);
-  }
   .promo-list {
     padding-top: 55px;
   }
@@ -93,6 +66,21 @@
   }
   .promo-list__item:nth-child(2) {
     width: 340px;
+  }
+  .opportunity__list-wrapper .inner {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: top center, center 108%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: auto;
+    padding-top: 38px;
+    padding-bottom: 0;
+    z-index: 10;
+  }
+  .opportunity__list-wrapper {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: top center;
+    padding-bottom: 0;
   }
   .list-note {
     text-align: left;
@@ -116,12 +104,6 @@
 @media (min-width: 960px) {
   .opportunity {
     min-height: 880px;
-  }
-  .opportunity::before {
-    top: 243px;
-  }
-  .opportunity::after {
-    content: none;
   }
   .list-note {
     display: flex;
