@@ -1,34 +1,44 @@
 .opportunity {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
 }
-.promo-list {
+.opportunity__promo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
-  text-align: center;
   width: 100%;
+  min-height: 220px;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.opportunity__promo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  width: 210px;
+  margin: 0;
   padding: 0;
-  padding-top: 43px;
+}
+.opportunity__promo:first-child {
+  padding-bottom: 25px;
 }
 .promo-list__item {
   font-size: 24px;
   line-height: 26px;
   font-weight: 300;
-  width: 210px;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 0;
 }
 .promo-list__recommendation {
   margin: 0;
 }
 .opportunity__list-wrapper {
   background-image: url("../img/bg-triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
-  background-position: top center, center 120%;
+  background-position: top center, center 108%;
   background-repeat: no-repeat;
-  padding-bottom: 300px;
+  padding-bottom: 290px;
 }
 .list-note {
   display: flex;
@@ -40,7 +50,7 @@
   padding: 0;
 }
 .list-note__item {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 .list-note__item-header {
   font-size: 18px;
@@ -49,41 +59,46 @@
   color: #000000;
   text-align: center;
   margin: 0;
-  margin-bottom: 8px;
+  padding-bottom: 11px;
 }
 .list-note__item-change {
   margin: 0;
 }
 @media (min-width: 660px) {
-  .promo-list {
+  .opportunity__promo-wrapper {
     padding-top: 55px;
+    padding-bottom: 38px;
   }
-  .promo-list__item {
+  .opportunity__promo {
     font-size: 40px;
     line-height: 46px;
     width: 620px;
     margin-bottom: 0;
   }
-  .promo-list__item:nth-child(2) {
+  .opportunity__promo:first-child {
+    padding-bottom: 0;
+  }
+  .opportunity__promo:nth-child(2) {
     width: 340px;
   }
   .opportunity__list-wrapper .inner {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: top center, center 108%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    height: auto;
     padding-top: 38px;
     padding-bottom: 0;
     z-index: 10;
+    margin-top: -75px;
   }
   .opportunity__list-wrapper {
     background-image: url("../img/bg-triangle-white.svg");
     background-position: top center;
+    background-size: 100%;
     padding-bottom: 0;
   }
   .list-note {
     text-align: left;
+    width: 310px;
     margin-left: 310px;
     margin-bottom: 0;
     min-height: 456px;
@@ -94,7 +109,6 @@
   .list-note__item-header {
     text-align: left;
     margin-top: 43px;
-    margin-bottom: 12px;
   }
   .opportunity-img {
     position: absolute;
@@ -102,15 +116,35 @@
   }
 }
 @media (min-width: 960px) {
-  .opportunity {
-    min-height: 880px;
+  .opportunity__promo-wrapper {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  .opportunity__promo {
+    font-size: 50px;
+    line-height: 60px;
+    width: 740px;
+  }
+  .opportunity__promo:last-child {
+    width: 430px;
+  }
+  .opportunity__list-wrapper .inner {
+    background-image: none;
+    height: 627px;
+    margin-bottom: 165px;
+  }
+  .opportunity__list-wrapper {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: top center;
+    background-size: 100%;
+    padding-bottom: 0;
   }
   .list-note {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 820px;
+    align-items: flex-start;
+    width: 880px;
     margin: 0 auto;
     margin-top: 360px;
   }
@@ -125,8 +159,8 @@
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     width: 292px;
     height: 302px;
-    top: -345px;
-    left: -20px;
+    top: -327px;
+    left: -27px;
   }
   .list-note__item:nth-child(2)::before {
     position: absolute;
@@ -134,8 +168,8 @@
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     width: 292px;
     height: 302px;
-    top: -345px;
-    left: -20px;
+    top: -327px;
+    left: -24px;
   }
   .list-note__item:nth-child(3)::before {
     position: absolute;
@@ -143,14 +177,16 @@
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     width: 292px;
     height: 302px;
-    top: -345px;
-    left: -20px;
+    top: -327px;
+    left: -23px;
   }
   .list-note__item-header {
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
     margin: 0;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     padding: 0;
   }
   .list-note__item-change {
