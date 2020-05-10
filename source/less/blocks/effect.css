@@ -76,9 +76,10 @@
   }
   .effect__article::after {
     width: 300px;
-    height: 345px;
-    top: calc(50% - 145px);
-    left: -60%;
+    height: 350px;
+    background-size: 100%;
+    top: calc(50% - 202px);
+    left: -65%;
   }
   .effect__article-header {
     line-height: 30px;
