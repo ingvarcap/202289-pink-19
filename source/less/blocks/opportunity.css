@@ -36,18 +36,16 @@
 }
 .opportunity__list-wrapper {
   background-image: url("../img/bg-triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
-  background-position: top center, center 108%;
+  background-position: center -5%, center 109%;
   background-repeat: no-repeat;
-  padding-bottom: 290px;
+  padding-top: 25px;
 }
 .list-note {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-top: 80px;
-  padding: 0;
+  padding: 53px 0 292px 0;
 }
 .list-note__item {
   margin-bottom: 30px;
@@ -67,7 +65,7 @@
 @media (min-width: 660px) {
   .opportunity__promo-wrapper {
     padding-top: 55px;
-    padding-bottom: 38px;
+    padding-bottom: 50px;
   }
   .opportunity__promo {
     font-size: 40px;
@@ -81,34 +79,35 @@
   .opportunity__promo:nth-child(2) {
     width: 340px;
   }
-  .opportunity__list-wrapper .inner {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    padding-top: 38px;
-    padding-bottom: 0;
-    z-index: 10;
-    margin-top: -75px;
-  }
   .opportunity__list-wrapper {
     background-image: url("../img/bg-triangle-white.svg");
     background-position: top center;
     background-size: 100%;
-    padding-bottom: 0;
+    padding: 0;
+  }
+  .opportunity__list-wrapper .inner {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 75px 0 43px 0;
+    z-index: 10;
   }
   .list-note {
     text-align: left;
-    width: 310px;
+    margin-top: 0;
     margin-left: 310px;
     margin-bottom: 0;
-    min-height: 456px;
+    padding: 0;
   }
   .list-note__item {
-    margin-bottom: -8px;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  .list-note__item:last-child {
+    padding-bottom: 0;
   }
   .list-note__item-header {
     text-align: left;
-    margin-top: 43px;
   }
   .opportunity-img {
     position: absolute;
@@ -116,6 +115,9 @@
   }
 }
 @media (min-width: 960px) {
+  .opportunity {
+    padding-bottom: 80px;
+  }
   .opportunity__promo-wrapper {
     padding-top: 65px;
     padding-bottom: 80px;
@@ -130,8 +132,7 @@
   }
   .opportunity__list-wrapper .inner {
     background-image: none;
-    height: 627px;
-    margin-bottom: 165px;
+    padding-bottom: 0;
   }
   .opportunity__list-wrapper {
     background-image: url("../img/bg-triangle-white.svg");
@@ -146,7 +147,7 @@
     align-items: flex-start;
     width: 880px;
     margin: 0 auto;
-    margin-top: 360px;
+    margin-top: 249px;
   }
   .list-note__item {
     position: relative;

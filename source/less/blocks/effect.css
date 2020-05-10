@@ -4,38 +4,37 @@
 @media (min-width: 660px) {
   .effect {
     display: block;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 96px;
-  }
-  .effect::before {
-    position: absolute;
-    content: "24";
-    font-size: 96px;
-    line-height: 150px;
-    font-weight: 700;
-    color: #d22856;
-    top: 16px;
-    left: 42px;
-    padding: 11px 29px;
-    border: 14px solid #d22856;
-    border-radius: 50%;
-    z-index: 10;
-  }
-  .effect::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 280px;
-    top: -40px;
-    left: 22px;
+    padding: 95px 0;
   }
   .effect__article {
+    position: relative;
     width: 310px;
-    margin-left: 310px;
-    padding-bottom: 115px;
+    margin-left: auto;
+  }
+  .effect__article::before {
+    z-index: 2;
+    position: absolute;
+    padding: 12px 32px;
+    top: calc(50% - 89px);
+    left: -94%;
+    content: "24";
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 149px;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 100%;
+    background-color: #eeeeee;
+  }
+  .effect__article::after {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 280px;
+    top: calc(50% - 145px);
+    left: -99%;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
   }
   .effect__article-header {
     font-size: 30px;
@@ -60,38 +59,26 @@
 }
 @media (min-width: 960px) {
   .effect {
+    padding: 43px 0 114px 0;
     background-color: #f2f2f2;
-    margin: 0;
-  }
-  .effect::before {
-    position: absolute;
-    content: "24";
-    font-size: 120px;
-    line-height: 186px;
-    font-weight: 700;
-    color: #d22856;
-    height: 255px;
-    width: 255px;
-    top: -25px;
-    left: 150px;
-    padding: 11px 42px;
-    border: 18px solid #d22856;
-    border-radius: 50%;
-    z-index: 10;
-  }
-  .effect::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 345px;
-    top: 0;
-    left: 0;
   }
   .effect__article {
     width: 570px;
     margin-left: 366px;
+  }
+  .effect__article::before {
+    padding: 15px 41px;
+    top: calc(50% - 129px);
+    left: -61%;
+    font-size: 120px;
+    line-height: 186px;
+    border: 18px solid #d22856;
+  }
+  .effect__article::after {
+    width: 300px;
+    height: 345px;
+    top: calc(50% - 145px);
+    left: -60%;
   }
   .effect__article-header {
     line-height: 30px;
