@@ -1,5 +1,7 @@
 .feedback {
   position: relative;
+  padding-top: 45px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,11 +19,11 @@
   text-align: center;
 }
 .slider__name {
+  margin-bottom: 16px;
   display: block;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 45px;
-  margin-bottom: 16px;
+  color: #000000;
 }
 .slider__age-profession {
   display: none;
@@ -72,29 +74,83 @@
 }
 @media (min-width: 660px) {
   .feedback {
-    height: 310px;
+    padding-top: 31px;
+    padding-bottom: 20px;
+  }
+  .feedback__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 620px;
   }
   .slider__content {
+    margin: 0;
+    padding-bottom: 36px;
+    order: -1;
     font-size: 18px;
     line-height: 30px;
   }
-  .slider__age-profession,
-  .slider__name {
-    width: 620px;
-    position: absolute;
-    line-height: 30px;
-    text-align: center;
-  }
   .slider__age-profession {
+    padding-bottom: 19px;
     display: block;
-    top: 130px;
   }
   .slider__name {
-    top: 105px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
-@media (min-width: 660px) {
-  .slider__item {
-    width: 620px;
+@media (min-width: 960px) {
+  .feedback {
+    padding-top: 184px;
+  }
+  .feedback::before {
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 35px);
+    width: 78px;
+    height: 64px;
+    content: "";
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: repeat;
+    opacity: 0.1;
+  }
+  .feedback__wrapper-slider {
+    position: relative;
+  }
+  .feedback__wrapper-slider::before {
+    position: absolute;
+    top: 28px;
+    left: -119px;
+    width: 21px;
+    height: 41px;
+    content: "";
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+  .feedback__wrapper-slider::after {
+    position: absolute;
+    top: 28px;
+    right: -119px;
+    width: 21px;
+    height: 41px;
+    content: "";
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+  .feedback__list-item {
+    width: 700px;
+  }
+  .slider__name {
+    font-size: 24px;
+  }
+  .slider__age-profession {
+    font-size: 18px;
+  }
+  .feedback__toggles-list {
+    display: none;
   }
 }
