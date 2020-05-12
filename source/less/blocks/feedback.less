@@ -46,6 +46,10 @@
   padding: 0;
 }
 
+.feedback__wrapper-button {
+  display: none;
+}
+
 .slider__toggle-btn {
   display: block;
   position: relative;
@@ -129,36 +133,34 @@
       height: 64px;
       content: "";
       background-image: url("../img/icon-quotes.svg");
-      background-repeat: repeat;
+      background-repeat: no-repeat;
       opacity: 0.1;
     }
   }
 
   .feedback__wrapper-slider {
     position: relative;
+  }
 
-    &::before {
-      position: absolute;
+  .feedback__wrapper-button {
+    position: absolute;
+    width: 21px;
+    height: 41px;
+    border: none;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+
+    &-left {
       top: 28px;
       left: -119px;
-      width: 21px;
-      height: 41px;
-      content: "";
       background-image: url("../img/icon-review-arrow-left.svg");
-      background-repeat: no-repeat;
-      opacity: 0.4;
     }
 
-    &::after {
-      position: absolute;
+    &-right {
       top: 28px;
       right: -119px;
-      width: 21px;
-      height: 41px;
-      content: "";
       background-image: url("../img/icon-review-arrow-right.svg");
-      background-repeat: no-repeat;
-      opacity: 0.4;
     }
   }
 

@@ -36,7 +36,7 @@
 }
 .opportunity__list-wrapper {
   background-image: url("../img/bg-triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
-  background-position: center -5%, center 109%;
+  background-position: top -3% center, center 109%;
   background-repeat: no-repeat;
   padding-top: 25px;
 }
