@@ -149,7 +149,7 @@
         <div class="price-offers__wrapper">
           <ul class="price-offers__list">
             <ul class="price-offers__bonus-list-tablet bonus-list-tablet">
-              <li class="bonus-list-tablet__item">Розовый фильтр</li>
+              <li class="bonus-list-tablet__item"><span>Розовый фильтр</li>
               <li class="bonus-list-tablet__item">Смайлики</li>
               <li class="bonus-list-tablet__item">Комментарии</li>
             </ul>
@@ -159,20 +159,20 @@
                 <span class="price-offers__price">1,99 USD</span>
               </div>
               <ul class="price-offers__bonus-list bonus-list">
-                <li class="bonus-list__item">розовый фильтр</li>
-                <li class="bonus-list__item">смайлики</li>
-                <li class="bonus-list__item">комментарии</li>
+                <li class="bonus-list__item bonus-list__item-base"><span>розовый фильтр</span></li>
+                <li class="bonus-list__item bonus-list__item-base"><span>смайлики</span></li>
+                <li class="bonus-list__item bonus-list__item-base"><span>комментарии</span></li>
               </ul>
             </li>
-            <li class="price-offers__item">
+            <li class="price-offers__item ">
               <div class="price-offers__wrapper-head">
                 <h3 class="price-offers__name">стандарт</h3>
                 <span class="price-offers__price">3,99 USD</span>
               </div>
               <ul class="price-offers__bonus-list bonus-list">
-                <li class="bonus-list__item">розовый фильтр</li>
-                <li class="bonus-list__item">смайлики</li>
-                <li class="bonus-list__item">комментарии</li>
+                <li class="bonus-list__item bonus-list__item-standart"><span>розовый фильтр</span></li>
+                <li class="bonus-list__item bonus-list__item-standart"><span>смайлики</span></li>
+                <li class="bonus-list__item bonus-list__item-standart"><span>комментарии</span></li>
               </ul>
             </li>
             <li class="price-offers__item">
@@ -181,40 +181,77 @@
                 <span class="price-offers__price">9,99 USD</span>
               </div>
               <ul class="price-offers__bonus-list bonus-list">
-                <li class="bonus-list__item">розовый фильтр</li>
-                <li class="bonus-list__item">смайлики</li>
-                <li class="bonus-list__item">комментарии</li>
+                <li class="bonus-list__item bonus-list__item-unlim"><span>розовый фильтр</span></li>
+                <li class="bonus-list__item bonus-list__item-unlim"><span>смайлики</span></li>
+                <li class="bonus-list__item bonus-list__item-unlim"><span>комментарии</span></li>
               </ul>
             </li>
           </ul>
-          <p class="price-offers__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </p>
+          <ul class="price-offers__toggles-list slider__toggles-list">
+            <li class="slider__toggles-item">
+              <button class="slider__toggle-btn slider__toggle-btn--price-offers" type="button"></button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle-btn  slider__toggle-btn--active" type="button"></button>
+            </li>
+            <li class="slider__toggles-item">
+              <button class="slider__toggle-btn  slider__toggle-btn--price-offers" type="button"></button>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="contacts inner">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <span class="contacts__preview">Остались вопросы?</span>
-        <span class="contacts__preview">Свяжитесь с нами!</span>
-        <ul class="contacts__communication communication-list">
-          <li class="communication-list__item">
-            <span class="communication-list__action">Звоните:</span>
-            <span class="communication-list__type">+7(812)555-66-66</span>
-          </li>
-          <li class="communication-list__item">
-            <span class="communication-list__action">Пишите:</span>
-            <span class="communication-list__type">mail@htmlacademy.ru</span>
-          </li>
-          <li class="communication-list__item">
-            <span class="communication-list__action">Приезжайте в гости:</span>
-            <span class="communication-list__type">ул. Большая Конюшенная, 19/8</span>
-          </li>
-        </ul>
-        <img class="contacts__map"  src="https://via.placeholder.com/150x150" alt="Карта">
+      <section class="contacts">
+        <div class="inner">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <span class="contacts__preview">Остались вопросы?</span>
+          <span class="contacts__preview">Свяжитесь с нами!</span>
+          <ul class="contacts__communication communication-list">
+            <li class="communication-list__item">
+              <span class="communication-list__action">Звоните:</span>
+              <span class="communication-list__type">+7&nbsp;(812)&nbsp;555-66-66</span>
+            </li>
+            <li class="communication-list__item">
+              <span class="communication-list__action">Пишите:</span>
+              <span class="communication-list__type">mail@htmlacademy.ru</span>
+            </li>
+            <li class="communication-list__item">
+              <span class="communication-list__action">Приезжайте в гости:</span>
+              <span class="communication-list__type">ул. Большая Конюшенная, 19/8</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+        </div>
       </section>
     </main>
+    <footer class="page-footer page-footer--index  inner">
+      <img class="page-footer__logo" src="../img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+              <img class="social__link-img" src="../img/icon-twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy">
+              <img class="social__link-img" src="../img/icon-facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy">
+              <img class="social__link-img" src="../img/icon-youtube.svg" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__development development">
+        <span class="development__team">Разработано</span>
+        <a href="https://htmlacademy.ru" class="development__link">
+          <img  class="development__link-img" src="../img/htmlacademy.svg" alt="Логотип HTMLAcademy">
+        </a>
+      </div>
+    </footer>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
