@@ -1,3 +1,4 @@
+@import "../mixins";
 .photo-user {
   margin: 0;
   padding: 0;
@@ -16,29 +17,35 @@
 }
 
 .photo-user__intro {
+  margin: 0 auto;
+  padding: 49px 0 47px 0;
+  width: 245px;
   line-height: 30px;
   text-align: center;
-  padding: 49px 15px;
 }
 
-.photo-user__container-span {
-  position: relative;
+.photo-user__container-main {
   height: 137px;
+  background-image: url("../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.photo-user__container-wrapper {
+  .container();
+}
+
 .photo-user__img-day {
-  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 6px 19px;
+  width: 140px;
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #d22856;
-  top: 0;
-  right: -2px;
-  margin-right: 20px;
-  padding: 6px 21px;
 }
 
 .comments-list__item-article {
@@ -89,24 +96,28 @@
 }
 
 @media (min-width: 660px) {
-  .photo-user__container-span {
-    height: 510px;
-  }
-
-  .comments-list__img--main {
+.comments-list__img--main {
     min-height: 510px;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .photo-user__intro {
+    margin: 0 auto;
+    padding: 94px 0 77px 0;
+    width: 440px;
     font-size: 18px;
-    padding: 95px 90px 75px 90px;
   }
 
-  .photo-user__img-day {
-    right: 3px;
-    top: 55px;
+  .photo-user__container-wrapper {
+    padding-top: 57px;
+  }
+
+  .photo-user__container-main {
+    height: 510px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .comments-list__comments {
@@ -118,8 +129,14 @@
     padding: 22px 13px 25px 28px;
   }
 
-  .comments-list__comments--main {
-    height: 120px;
+  .comments-list__item {
+    width: 300px;
+  }
+
+  .comments-list__item-main {
+    margin: 0;
+    padding: 0;
+    width: 620px;
   }
 
   .comments-list__item-article-wrapper {
@@ -150,15 +167,6 @@
     max-height: 510px;
   }
 
-  .comments-list__item {
-    width: 300px;
-  }
-
-  .comments-list__item-main {
-    width: 620px;
-    margin-bottom: 50px;
-  }
-
   .comments-list__counter::before {
     top: 6px;
     right: 19px;
@@ -171,7 +179,16 @@
   }
 
   .photo-user__intro {
-    padding: 87px 160px;
+    margin: 0 auto;
+    padding: 90px 0 86px 0;
+    width: 575px;
+  }
+
+  .photo-user__container-main {
+    height: 510px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .comments-list__item-main {
@@ -184,11 +201,6 @@
 
   .comments-list__comments--main {
     height: 95px;
-  }
-
-  .photo-user__img-day {
-    top: 52px;
-    right: 112px;
   }
 
   .comments-list__img {

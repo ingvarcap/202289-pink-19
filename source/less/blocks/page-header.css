@@ -267,7 +267,7 @@
     height: 745px;
     padding-top: 108px;
     padding-left: 30px;
-    background-position: left bottom;
+    background-position: left -15% bottom;
   }
   .main-nav--opened .page-header__slogan p {
     margin: 0;
