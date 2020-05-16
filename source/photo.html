@@ -8,85 +8,142 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo" >
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип сайта PINK">
-          </a>
-          <button class="main-nav__toggle" type="button">X</button>
+    <header class="page-header page-header--photo">
+      <nav class="main-nav main-nav--photo main-nav--opened main-nav--nojs">
+        <div class="menu">
+          <div class="menu-wrapper__main">
+            <div class="menu-wrapper">
+              <div class="main-nav__logo-block">
+                <div class="inner">
+                  <a href="index.html" class="page-header__logo" >
+                    <picture>
+                      <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+                      <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
+                      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
+                    </picture>
+                  </a>
+                  <button class="main-nav__toggle" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="main-nav__wrapper-list">
+              <span class="visually-hidden">Открыть меню</span>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item   site-list__item--active">
+                  <a class="site-list__item-link" href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__item-link" href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link" href="index.html">главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link">фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#">html academy</a>
-          </li>
-        </ul>
+        <div class="page-header--photo__header">
+          <h1>Фотографии пользователей</h1>
+        </div>
       </nav>
-      <h1 class="page-header__header-photo">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="photo-user">
-        <p class="photo-user__intro inner">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
-        <div class="photo-user__container-span">
-          <span class="photo-user__img-day">панорама дня</span>
+        <p class="photo-user__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo-user__container-main">
+          <div class="photo-user__container-wrapper">
+            <span class="photo-user__img-day">панорама дня</span>
+          </div>
         </div>
         <ul class="photo-user__list comments-list inner">
           <li class="comments-list__item comments-list__item-main">
-            <span class="comments-list__name">Анна</span>
-            <p class="comments-list__comments">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="comments-list__time">(5 минут назад)</span>
-            <p class="comments-list__counter">нравится: 215</p>
+            <article class="comments-list__item-article comments-list__comments--main">
+              <span class="comments-list__name">Анна</span>
+              <span class="comments-list__time">(5 минут назад)</span>
+              <p class="comments-list__comments">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="comments-list__counter">нравится: 215</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Левон</span>
-            <span class="comments-list__time">(5 минут назад)</span>
-            <p class="comments-list__comments">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="comments-list__counter">нравится: 356</p>
+            <picture>
+              <source srcset="img/photo-car-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Левон</span>
+              <span class="comments-list__time">(5 часов назад)</span>
+              <p class="comments-list__comments">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="comments-list__counter">нравится: 356</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Антон</span>
-            <span class="comments-list__time">(12 часов назад)</span>
-            <p class="comments-list__comments">Соседи будут рады!</p>
-            <p class="comments-list__counter">нравится: 666</p>
+            <picture>
+              <source srcset="img/photo-drumset-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Антон</span>
+              <span class="comments-list__time">(12 часов назад)</span>
+              <p class="comments-list__comments">Соседи будут рады!</p>
+              <p class="comments-list__counter">нравится: 666</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Борис</span>
-            <span class="comments-list__time">(20 часов назад)</span>
-            <p class="comments-list__comments">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="comments-list__counter">нравится: 215</p>
+            <picture>
+              <source srcset="img/photo-window-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Борис</span>
+              <span class="comments-list__time">(20 часов назад)</span>
+              <p class="comments-list__comments">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="comments-list__counter">нравится: 215</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Сергей</span>
-            <span class="comments-list__time">(25 часов назад)</span>
-            <p class="comments-list__comments">Самая кубанская в мире!</p>
-            <p class="comments-list__counter">нравится: 4</p>
+            <picture>
+              <source srcset="img/photo-fair-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Сергей</span>
+              <span class="comments-list__time">(25 часов назад)</span>
+              <p class="comments-list__comments">Самая кубанская в мире!</p>
+              <p class="comments-list__counter">нравится: 4</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Максим</span>
-            <span class="comments-list__time">(40 часов назад)</span>
-            <p class="comments-list__comments">Где снег-то?</p>
-            <p class="comments-list__counter">нравится: 150</p>
+            <picture>
+              <source srcset="img/photo-pov-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Максим</span>
+              <span class="comments-list__time">(40 часов назад)</span>
+              <p class="comments-list__comments">Где снег-то?</p>
+              <p class="comments-list__counter">нравится: 150</p>
+            </article>
           </li>
           <li class="comments-list__item">
-            <img class="comments-list__img" src="https://via.placeholder.com/150x150" alt="Фотографии пользователей">
-            <span class="comments-list__name">Надежда</span>
-            <span class="comments-list__time">(45 часов назад)</span>
-            <p class="comments-list__comments">Всем GM и взаимные лайки</p>
-            <p class="comments-list__counter">нравится: 2560</p>
+            <picture>
+              <source srcset="img/photo-wing-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="comments-list__img" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотографии пользователей">
+            </picture>
+            <article class="comments-list__item-article">
+              <span class="comments-list__name">Надежда</span>
+              <span class="comments-list__time">(45 часов назад)</span>
+              <p class="comments-list__comments">Всем GM и взаимные лайки</p>
+              <p class="comments-list__counter">нравится: 2560</p>
+            </article>
           </li>
         </ul>
         <p class="photo-user__prison inner">Затмите их всех!</p>
@@ -115,7 +172,7 @@
       </section>
     </main>
     <footer class="page-footer inner">
-      <img class="page-footer__logo" src="https://via.placeholder.com/150x40" alt="Логотип приложения">
+      <a href="index.html" class="page-footer__link-main"></a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -131,10 +188,24 @@
       </div>
       <div class="page-footer__development development">
         <span class="development__team">Разработано</span>
-        <a href="https://htmlacademy.ru" class="development__link">
-          <img  class="development__link-img" src="https://via.placeholder.com/35x30" alt="Логотип HTMLAcademy">
-        </a>
+        <a href="https://htmlacademy.ru" class="development__link"></a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+    </script>
   </body>
 </html>

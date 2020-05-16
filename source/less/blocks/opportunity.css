@@ -1,86 +1,199 @@
 .opportunity {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.opportunity__promo-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
-}
-.promo-list {
   background-color: #ffffff;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
   width: 100%;
-}
-.promo-list__recommendation {
-  font-size: 24px;
-  line-height: auto;
-  width: 210px;
+  min-height: 220px;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
-.opportunity-list__wrapper {
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-}
-.list-note {
+.opportunity__promo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
   text-align: center;
+  width: 210px;
   margin: 0;
   padding: 0;
+}
+.opportunity__promo:first-child {
+  padding-bottom: 25px;
+}
+.promo-list__item {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.promo-list__recommendation {
+  margin: 0;
+}
+.opportunity__list-wrapper {
+  background-image: url("../img/bg-triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
+  background-position: top -3% center, center 109%;
+  background-repeat: no-repeat;
+  padding-top: 25px;
+}
+.list-note {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 53px 0 292px 0;
+}
+.list-note__item {
+  margin-bottom: 30px;
 }
 .list-note__item-header {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 11px;
 }
-.effect {
-  display: none;
-}
-.effect_header {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 700;
-}
-.effect__link {
-  color: #d22856;
+.list-note__item-change {
+  margin: 0;
 }
 @media (min-width: 660px) {
-  .opportunity-list__wrapper {
+  .opportunity__promo-wrapper {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .opportunity__promo {
+    font-size: 40px;
+    line-height: 46px;
     width: 620px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 0;
+  }
+  .opportunity__promo:first-child {
+    padding-bottom: 0;
+  }
+  .opportunity__promo:nth-child(2) {
+    width: 340px;
+  }
+  .opportunity__list-wrapper {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: top center;
+    background-size: 100%;
+    padding: 0;
+  }
+  .opportunity__list-wrapper .inner {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 75px 0 43px 0;
+    z-index: 10;
   }
   .list-note {
     text-align: left;
-    width: 310px;
+    margin-top: 0;
     margin-left: 310px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .list-note__item {
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  .list-note__item:last-child {
+    padding-bottom: 0;
+  }
+  .list-note__item-header {
+    text-align: left;
   }
   .opportunity-img {
     position: absolute;
     display: block;
   }
-  .effect {
-    display: block;
-    transform: translateX(50%);
-    width: 310px;
-  }
 }
 @media (min-width: 960px) {
-  .opportunity-list__wrapper {
-    width: 820px;
+  .opportunity {
+    padding-bottom: 80px;
+  }
+  .opportunity__promo-wrapper {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  .opportunity__promo {
+    font-size: 50px;
+    line-height: 60px;
+    width: 740px;
+  }
+  .opportunity__promo:last-child {
+    width: 430px;
+  }
+  .opportunity__list-wrapper .inner {
+    background-image: none;
+    padding-bottom: 0;
+  }
+  .opportunity__list-wrapper {
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: top center;
+    background-size: 100%;
+    padding-bottom: 0;
   }
   .list-note {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 820px;
+    align-items: flex-start;
+    width: 880px;
+    margin: 0 auto;
+    margin-top: 249px;
+  }
+  .list-note__item {
+    position: relative;
+    width: 240px;
     margin: 0;
+  }
+  .list-note__item:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    width: 292px;
+    height: 302px;
+    top: -327px;
+    left: -27px;
+  }
+  .list-note__item:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    width: 292px;
+    height: 302px;
+    top: -327px;
+    left: -24px;
+  }
+  .list-note__item:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    width: 292px;
+    height: 302px;
+    top: -327px;
+    left: -23px;
+  }
+  .list-note__item-header {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+  .list-note__item-change {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
   .opportunity-img {
     display: none;
