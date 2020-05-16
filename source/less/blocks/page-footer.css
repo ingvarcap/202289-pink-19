@@ -147,7 +147,7 @@
     height: 43px;
   }
 }
-@media (min-width: 660px) and (min-width: 960px) {
+@media (min-width: 960px) {
   .page-footer {
     margin: 73px auto;
     padding: 0;
