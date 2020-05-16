@@ -156,13 +156,19 @@
 
   .development__team {
     display: block;
-    margin-left: 60px;
-    padding: 15px 15px 0 0;
+    margin-left: 62px;
+    padding: 10px 0 0 0;
   }
 
-  .development__link::before {
-    width: 35px;
-    height: 35px;
+  .development__link {
+    width: 43px;
+    height: 43px;
+
+  &::before {
+    top: 7px;
+    left: 7px;
+    width: 43px;
+    height: 43px;
   }
 }
 
@@ -187,7 +193,14 @@
   }
 
   .development__team {
+    margin-left: 30px;
+    padding: 0px 0px 8px 0;
     font-size: 18px;
-    line-height: 18p
+    line-height: 18px;
   }
+
+  .development__link::before {
+    top: 0;
+  }
+}
 }
