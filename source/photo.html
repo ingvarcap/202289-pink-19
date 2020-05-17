@@ -164,35 +164,40 @@
         <p class="photo-user__prison inner">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="processing-photo">
-        <h2 class="visually-hidden">Инструменты разработки</h2>
-        <div class="processing-photo__wrapper">
-          <picture>
-            <source srcset="img/photo-road-desktop@1x.jpg"  media="(min-width: 960px)">
-            <source srcset="img/photo-road-tablet@1x.jpg"  media="(min-width: 660px)">
-            <img class="processing-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Обрабатываемая фотография">
-          </picture>
-        </div>
-        <div class="processing-photo__wrapper-list">
-          <ul class="processing-photo__tools tools-list">
-            <li class="tools-list__item  tools-list__item--active">
-              <button class="tools-list__btn"></button>
-            </li>
-            <li class="tools-list__item">
-              <button class="tools-list__btn"></button>
-            </li>
-            <li class="tools-list__item">
-              <button class="tools-list__btn"></button>
-            </li>
-          </ul>
-          <ul class="processing-photo__button button-list">
-            <li class="button-list__item">
-              <button class="button-list__btn button-list__btn-post" type="button">Запостить</button>
-            </li>
-            <li class="button-list__item">
-              <button class="button-list__btn button-list__btn-cancel" type="button">Отмена</button>
-            </li>
-          </ul>
+        <div class="processing__wrapper">
+          <h2 class="visually-hidden">Инструменты разработки</h2>
+          <div class="processing-photo__wrapper">
+            <picture>
+              <source srcset="img/photo-road-desktop@1x.jpg"  media="(min-width: 960px)">
+              <source srcset="img/photo-road-tablet@1x.jpg"  media="(min-width: 660px)">
+              <img class="processing-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Обрабатываемая фотография">
+            </picture>
           </div>
+          <div class="processing-photo__wrapper-list">
+            <ul class="processing-photo__tools tools-list">
+              <li class="tools-list__item  tools-list__item--active">
+                <button class="tools-list__btn"></button>
+                <button class="tools-list__btn-toggle"></button>
+              </li>
+              <li class="tools-list__item">
+                <button class="tools-list__btn"></button>
+                <button class="tools-list__btn-toggle"></button>
+              </li>
+              <li class="tools-list__item">
+                <button class="tools-list__btn"></button>
+                <button class="tools-list__btn-toggle"></button>
+              </li>
+            </ul>
+            <ul class="processing-photo__button button-list">
+              <li class="button-list__item">
+                <button class="button-list__btn button-list__btn-post" type="button">Запостить</button>
+              </li>
+              <li class="button-list__item">
+                <button class="button-list__btn button-list__btn-cancel" type="button">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer inner">
