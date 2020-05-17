@@ -17,12 +17,13 @@
   padding: 0;
 }
 .comments-list {
+  margin-bottom: 45px;
   background-color: #ffffff;
 }
 .comments-list__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
@@ -102,7 +103,11 @@
   left: 0;
 }
 .photo-user__prison {
+  line-height: 30px;
   text-align: center;
+}
+.photo-user__prison:last-child {
+  padding-bottom: 44px;
 }
 .comments-list__img {
   width: 100%;
@@ -127,6 +132,11 @@
     background-image: url("../img/panorama-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .comments-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .comments-list__comments {
     padding: 0;
@@ -153,21 +163,21 @@
     background-image: none;
   }
   .comments-list__item-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 23px 13px 25px 28px;
   }
   .comments-list__item {
     width: 300px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
+    min-height: 455px;
   }
   .comments-list__item-main {
     margin: 0 0 50px 0;
     padding: 0;
     width: 620px;
-  }
-  .comments-list__item-article-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 120px;
   }
   .comments-list__item picture {
     height: 300px;
@@ -180,15 +190,13 @@
     top: 9px;
     right: 16px;
   }
-  .comments-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 620px;
-  }
   .comments-list__img {
     height: 300px;
     max-height: 510px;
+  }
+  .comments-list__counter {
+    margin-top: auto;
+    padding-top: 0;
   }
   .comments-list__counter::before {
     top: 6px;
@@ -210,14 +218,25 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .comments-list__item {
+    margin-bottom: 53px;
+    min-height: 555px;
+  }
+  .comments-list__item picture {
+    height: 400px;
+  }
   .comments-list__item-main {
     width: 940px;
+    min-height: 95px;
   }
-  .comments-list__item {
-    margin-bottom: 55px;
+  .comments-list__item-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 23px 13px 25px 28px;
   }
   .comments-list__comments--main {
-    height: 95px;
+    margin-bottom: 0;
   }
   .comments-list__img {
     height: 400px;
