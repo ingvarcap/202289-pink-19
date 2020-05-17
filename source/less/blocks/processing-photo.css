@@ -47,7 +47,7 @@
 .tools-list__item:nth-child(1)::after {
   position: absolute;
   top: 85px;
-  left: 0px;
+  left: 0;
   width: 240px;
   height: 2px;
   content: "";
@@ -70,7 +70,7 @@
   display: none;
   position: absolute;
   top: 85px;
-  left: 0px;
+  left: 0;
   width: 240px;
   height: 2px;
   content: "";
@@ -93,7 +93,7 @@
   display: none;
   position: absolute;
   top: 85px;
-  left: 0px;
+  left: 0;
   width: 240px;
   height: 2px;
   content: "";
