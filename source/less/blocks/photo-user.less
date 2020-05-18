@@ -170,6 +170,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex-grow: 1;
     margin: 23px 13px 25px 28px;
   }
 
@@ -206,22 +207,29 @@
   }
 
   .comments-list__counter {
+    position: relative;
     margin-top: auto;
-    padding-top: 0;
-  }
+    padding: 0;
 
-  .comments-list__counter::before {
-    top: 6px;
-    right: 19px;
+    &::before {
+      position: absolute;
+      top: 6px;
+      left: 228px;
+    }
   }
 
   .photo-user__prison {
     font-size: 18px;
+
+    &:last-child {
+      padding-bottom: 70px;
+    }
   }
 }
 
 @media (min-width: 960px) {
   .comments-list {
+    margin-bottom: 0;
     width: 940px;
   }
 
