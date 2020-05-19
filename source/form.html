@@ -112,8 +112,9 @@
             </p>
           </div>
           <div class="form__system system">
-            <h2 class="visually-hidden">Операционная система для PINK</h2>
-              <p class="system__question">с каким приложением вы путешествовали?</p>
+            <div class="system__wrapper">
+              <h2 class="visually-hidden">Операционная система для PINK</h2>
+              <p class="system__question">с каким приложением путешествовали?</p>
               <p class="system__item">
                 <input class="system__info" type="radio" name="iOS" value="" id="iOS" checked>
                 <label class="system__name" for="iOS"> Pink для iOS</label>
@@ -124,13 +125,14 @@
               </p>
               <p class="system__item">
                 <input class="system__info" type="radio" name="windows" value="" id="windows">
-                <label class="system__name" for="windows"> Windows phone</label>
+                <label class="system__name" for="windows"> Windows Phone</label>
               </p>
+            </div>
           </div>
           <div class="form__comments comments inner">
             <h2 class="visually-hidden">Оценка приложения PINK</h2>
             <p class="comments__preview">опишите свои эмоции</p>
-            <textarea class="comments__description" cols="33" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="comments__description" cols="33" rows="13" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <div class="form__link-wrapper link-wrapper inner">
             <a class="link-wrapper__link" href="#">отправить форму</a>
@@ -138,35 +140,27 @@
           </div>
         </form>
       </section>
-    </main>
-    <footer class="page-footer inner">
-      <img class="page-footer__logo" src="../img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-twitter.svg" alt="Twitter">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-facebook.svg" alt="Facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-youtube.svg" alt="Youtube">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__development development">
-        <span class="development__team">Разработано</span>
-        <a href="https://htmlacademy.ru" class="development__link">
-          <img  class="development__link-img" src="../img/htmlacademy.svg" alt="Логотип HTMLAcademy">
-        </a>
-      </div>
-    </footer>
+      </main>
+      <footer class="page-footer inner">
+        <a href="index.html" class="page-footer__link-main"></a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__development development">
+          <span class="development__team">Разработано</span>
+          <a href="https://htmlacademy.ru" class="development__link"></a>
+        </div>
+      </footer>
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
