@@ -133,7 +133,7 @@ input[placeholder] {
   position: relative;
   padding-left: 20px;
 }
-.action__name:before {
+.action__name::before {
   position: absolute;
   top: -8px;
   left: -50px;
@@ -216,7 +216,7 @@ input[placeholder] {
 }
 .system__name::after {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -35px;
   width: 35px;
   height: 35px;
@@ -248,9 +248,7 @@ input[placeholder] {
   color: #283645;
 }
 .link-wrapper {
-  padding-bottom: 22
-    form__preview
-  px;
+  padding-bottom: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
