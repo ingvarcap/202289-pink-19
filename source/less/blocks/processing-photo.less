@@ -266,8 +266,8 @@
 
   .processing__wrapper {
     margin: 0 auto;
-    padding: 58px 0;
-    width: 810px;
+    padding: 52px 0 55px 0;
+    width: 860px;
   }
 
   .processing-photo__wrapper {
@@ -283,36 +283,78 @@
   }
 
   .tools-list {
-    margin: 0 0 88px  65px;
+    margin: 0 0 150px 33px;
     padding: 0;
-    width: 415px;
+    width: 410px;
   }
 
   .tools-list__item {
-    padding: 0 0 15px 0;
+    padding: 15px 0 0 0;
+
+    &:first-child {
+      padding: 0 0 0 0;
+    }
+
+    &:nth-child(1)::after,
+    &:nth-child(2)::after,
+    &:nth-child(3)::after {
+      width: 288px;
+    }
+
+    &:nth-child(1)::before {
+      top: 10px;
+      left: 164px;
+    }
+
+    &:nth-child(1)::after {
+      top: 16px;
+      left: 94px;
+    }
+
+    &:nth-child(2)::before {
+      top: 31px;
+      left: 339px;
+    }
+
+    &:nth-child(2)::after {
+      top: 36px;
+      left: 93px;
+    }
+
+    &:nth-child(3)::before {
+      top: 34px;
+      left: 252px;
+    }
+
+    &:nth-child(3)::after {
+      top: 40px;
+      left: 92px;
+    }
   }
 
   .tools-list__btn {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
     & svg {
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
     }
   }
 
   .button-list {
+    margin: 0 0 0 33px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .button-list__btn-post {
-    padding: 17px 46px;
+    margin: 0;
+    padding: 17px 44px;
   }
 
   .button-list__btn-cancel {
-    margin-bottom: 44px;
+    margin: 0;
     padding: 17px 51px;
   }
 }
