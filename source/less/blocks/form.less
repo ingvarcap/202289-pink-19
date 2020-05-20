@@ -210,15 +210,12 @@ input[placeholder] {
     content: "";
     background-color: #d22856;
     border-radius: 50%;
+    opacity: 0;
   }
 }
 
 .system__info:checked::before {
   opacity: 1;
-}
-
-.system__info::before {
-  opacity: 0;
 }
 
 .comments__preview {
@@ -299,9 +296,8 @@ input[placeholder] {
 
   .form__preview-add {
     margin: 0 auto;
-    display:block;
+    display: block;
     font-size: 18px;
-
   }
 
   .profile {
@@ -432,7 +428,6 @@ input[placeholder] {
   }
 
   .action {
-    margin-bottom: 2spx;
     order: -2;
   }
 
@@ -440,16 +435,13 @@ input[placeholder] {
     padding: 30px 0 56px 51px;
   }
 
-  .action__name {
-
-    &::before {
-      top: -5px;
-      left: -40px;
-      border: 2px solid #e5e5e5;
-    }
+  .action__name ::before {
+    top: -5px;
+    left: -40px;
+    border: 2px solid #e5e5e5;
   }
 
-  .action input[type="checkbox"]:checked + .action__name::after{
+  .action input[type="checkbox"]:checked + .action__name::after {
     left: -32px;
   }
 
