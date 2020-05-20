@@ -153,6 +153,9 @@
     margin: 88px auto;
     padding: 0;
   }
+  .page-footer--form {
+    margin: 0 auto;
+  }
   .page-footer__link-main {
     padding-bottom: 0;
   }
