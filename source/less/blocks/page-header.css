@@ -109,7 +109,7 @@
 .main-nav--opened .main-nav__toggle:hover::after {
   background-color: #d22856;
 }
-.main-nav--opened .main-nav__toggle:active:before {
+.main-nav--opened .main-nav__toggle:active::before {
   opacity: 0.3;
 }
 .main-nav--opened .main-nav__toggle:active::after {
@@ -132,7 +132,7 @@
 .main-nav--closed .main-nav__toggle {
   position: relative;
 }
-.main-nav--closed .main-nav__toggle:before {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: -2px;
