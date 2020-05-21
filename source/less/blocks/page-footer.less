@@ -25,6 +25,14 @@
     background-image: url("../img/logo-pink-blue-mobile.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover::before {
+    background-image: url("../img/logo-pink-blue-mobile--hover.svg");
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .social__list {
@@ -49,6 +57,14 @@
   height: 50px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--twitter::before {
@@ -112,6 +128,14 @@
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover::before {
+    background-image: url("../img/htmlacademy--hover.svg");
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {
@@ -124,6 +148,7 @@
 
   .page-footer--index {
     display: flex;
+    margin: 10px auto;
   }
 
   .page-footer__link-main {
@@ -134,7 +159,16 @@
       top: 0;
       left: 0;
     }
+
+    &:hover::before {
+      background-image: url("../img/logo-pink-blue-mobile--hover.svg");
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
   }
+
 
   .social__list {
     display: flex;
@@ -180,6 +214,10 @@
     padding: 0;
   }
 
+  .page-footer--index {
+    margin: 54px auto;
+  }
+
   .page-footer--form {
     margin: 0 auto;
   }
@@ -191,6 +229,14 @@
       top: -16px;
       left: 0;
       background-image: url("../img/logo-pink-blue-desktop.svg");
+    }
+
+    &:hover::before {
+      background-image: url("../img/logo-pink-white-desktop--hover.svg");
+    }
+
+    &:active::before {
+      opacity: 0.3;
     }
   }
 

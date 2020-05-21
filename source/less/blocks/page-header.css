@@ -30,6 +30,19 @@
   justify-content: space-between;
   align-items: center;
 }
+.page-header__logo {
+  display: block;
+  width: 75px;
+  height: 23px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+}
+.page-header__logo:hover {
+  background-image: url("../img/logo-pink-white-mobile--hover.svg");
+}
+.page-header__logo:active {
+  opacity: 0.3;
+}
 .site-list {
   display: flex;
   flex-direction: column;
@@ -54,6 +67,12 @@
 }
 .site-list__item-link {
   color: #ffffff;
+}
+.site-list__item-link:hover {
+  color: #d22856;
+}
+.site-list__item-link:active {
+  opacity: 0.3;
 }
 .main-nav__toggle {
   display: block;
@@ -84,6 +103,18 @@
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
+.main-nav--opened .main-nav__toggle:hover::before {
+  background-color: #d22856;
+}
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: #d22856;
+}
+.main-nav--opened .main-nav__toggle:active:before {
+  opacity: 0.3;
+}
+.main-nav--opened .main-nav__toggle:active::after {
+  opacity: 0.3;
+}
 .main-nav--opened .main-nav__logo-block {
   background-color: #283645;
 }
@@ -101,7 +132,7 @@
 .main-nav--closed .main-nav__toggle {
   position: relative;
 }
-.main-nav--closed .main-nav__toggle::before {
+.main-nav--closed .main-nav__toggle:before {
   content: "";
   position: absolute;
   top: -2px;
@@ -110,6 +141,13 @@
   height: 4px;
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 #ffffff;
+}
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 #d22856;
+}
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
 }
 .page-header__slogan {
   height: 392px;
@@ -170,6 +208,14 @@
   .page-header {
     position: relative;
     background-image: none;
+  }
+  .page-header__logo {
+    width: 154px;
+    height: 48px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+  }
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-tablet--hover.svg");
   }
   .page-header__slogan {
     width: 280px;
@@ -252,6 +298,14 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
+  }
+  .page-header__logo {
+    width: 154px;
+    height: 48px;
+    background-image: url("../img/logo-pink-white-desktop.svg");
+  }
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-desktop--hover.svg");
   }
   .page-header--photo__header h1 {
     height: 280px;

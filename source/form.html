@@ -15,13 +15,7 @@
             <div class="menu-wrapper">
               <div class="main-nav__logo-block">
                 <div class="inner">
-                  <a href="index.html" class="page-header__logo" >
-                    <picture>
-                      <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
-                      <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
-                      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
-                    </picture>
-                  </a>
+                  <a href="index.html" class="page-header__logo"></a>
                   <button class="main-nav__toggle" type="button"></button>
                 </div>
               </div>
@@ -125,15 +119,15 @@
               <div class="system__wrapper">
                 <h2 class="visually-hidden">Операционная система для PINK</h2>
                 <p class="system__item">
-                  <input class="system__info"  type="radio"  id="iOS" name="iOS" value="" checked>
+                  <input class="system__info"  type="radio"  id="iOS" name="system" value="" checked>
                   <label class="system__name" for="iOS"> Pink для iOS</label>
                 </p>
                 <p class="system__item">
-                  <input class="system__info" type="radio"  id="android" name="android" value="">
+                  <input class="system__info" type="radio"  id="android" name="system" value="">
                   <label class="system__name" for="android"> Pink на Android</label>
                 </p>
                 <p class="system__item">
-                  <input class="system__info" type="radio"  id="windows" name="windows" value="">
+                  <input class="system__info" type="radio"  id="windows" name="system" value="">
                   <label class="system__name" for="windows"> Windows Phone</label>
                 </p>
               </div>
@@ -149,6 +143,32 @@
             </div>
         </div>
         </form>
+      </section>
+      <section class="popup">
+        <div class="modal modal__disabled">
+          <div class="modal__wrapper-text">
+            <p class="modal__head">
+              Что-то пошло не так!
+            </p>
+            <p class="modal__recommendation">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+            <button class="modal__btn">Ок</button>
+          </div>
+        </div>
+        <div class="modal modal__enabled">
+          <div class="modal__wrapper-text">
+            <p class="modal__head">
+              Ваша заявка отправлена
+            </p>
+            <p class="modal__recommendation">
+              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+            </p>
+          </div>
+          <div class="modal__wrapper-btn">
+            <button class="modal__btn">Закрыть окно</button>
+          </div>
+        </div>
       </section>
       </main>
       <footer class="page-footer page-footer--form inner">

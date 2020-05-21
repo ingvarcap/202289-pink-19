@@ -149,7 +149,13 @@ input[placeholder] {
   width: 39px;
   height: 39px;
   background-color: #ffffff;
-  border: #e5e5e5;
+  border: 2px solid #e5e5e5;
+}
+.action__name:hover::before {
+  border: 2px solid #283645;
+}
+.action__name:active::before {
+  border: 2px solid #d22856;
 }
 .action input[type="checkbox"]:checked + .action__name::after {
   position: absolute;
@@ -160,6 +166,13 @@ input[placeholder] {
   height: 17px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
+  opacity: 1;
+}
+.action__name::after {
+  opacity: 0;
+}
+.action__name:hover::after {
+  opacity: 1;
 }
 .contacts__info {
   display: none;
@@ -195,6 +208,7 @@ input[placeholder] {
 .system__question {
   margin: 0 auto;
   padding: 0;
+  width: 295px;
   transform: translateY(164%);
 }
 .system__item {
@@ -221,6 +235,9 @@ input[placeholder] {
   border-radius: 50%;
   border: 2px solid #e5e5e5;
 }
+.system__info :active {
+  border: 2px solid #d22856;
+}
 .system__info::before {
   position: absolute;
   top: 8px;
@@ -231,6 +248,9 @@ input[placeholder] {
   background-color: #d22856;
   border-radius: 50%;
   opacity: 0;
+}
+.system__info:hover::before {
+  opacity: 1;
 }
 .system__info:checked::before {
   opacity: 1;
@@ -270,6 +290,13 @@ input[placeholder] {
   border: 1px solid transparent;
   border-radius: 3px;
 }
+.link-wrapper__link:hover {
+  background-color: #1c9b5e;
+}
+.link-wrapper__link:active {
+  background-color: #1c9b5e;
+  color: #7dbd99;
+}
 .link-wrapper__star {
   color: #d22856;
 }
@@ -301,7 +328,7 @@ input[placeholder] {
   }
   .form__preview-add {
     margin: 0 auto;
-    display: block;
+    display: inline;
     font-size: 18px;
   }
   .profile {
@@ -350,6 +377,9 @@ input[placeholder] {
     padding: 0 25px;
     transform: translateY(0);
   }
+  .system__question {
+    width: 380px;
+  }
   .action__header {
     width: 425px;
   }
@@ -382,33 +412,51 @@ input[placeholder] {
   .contacts-data__tel {
     position: relative;
   }
+  .contacts-data__tel::before {
+    position: absolute;
+    bottom: 89px;
+    right: 22px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
   .contacts-data__tel::after {
     position: absolute;
     bottom: 67px;
-    right: 0;
+    right: 2px;
     content: "";
-    width: 63px;
-    height: 63px;
+    width: 62px;
+    height: 62px;
     background-color: #e5e5e5;
-    background-image: url("..img/icon-phone.svg");
-    background-repeat: no-repeat;
-    z-index: 10;
   }
   .contacts-data__mail:last-child {
     position: relative;
     padding-bottom: 0;
   }
+  .contacts-data__mail:last-child::before {
+    position: absolute;
+    bottom: 91px;
+    right: 22px;
+    content: "";
+    width: 19px;
+    height: 15px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
   .contacts-data__mail:last-child::after {
     position: absolute;
     bottom: 67px;
-    right: 0;
+    right: 2px;
     content: "";
-    width: 63px;
-    height: 63px;
+    width: 62px;
+    height: 62px;
     background-color: #e5e5e5;
-    background-image: url("..img/icon-mail.svg");
-    background-repeat: no-repeat;
-    z-index: 10;
   }
   .action {
     order: -2;
@@ -416,10 +464,9 @@ input[placeholder] {
   .action__wrapper {
     padding: 30px 0 56px 51px;
   }
-  .action__name ::before {
+  .action__name::before {
     top: -5px;
-    left: -40px;
-    border: 2px solid #e5e5e5;
+    left: -41px;
   }
   .action input[type="checkbox"]:checked + .action__name::after {
     left: -32px;
@@ -506,11 +553,21 @@ input[placeholder] {
   .contacts-data__name {
     padding-bottom: 22px;
   }
+  .contacts-data__tel::before {
+    bottom: 78px;
+    right: 22px;
+  }
+  .contacts-data__mail:last-child::before {
+    bottom: 79px;
+    right: 25px;
+  }
   .contacts-data__tel::after {
     bottom: 54px;
+    right: 2px;
   }
   .contacts-data__mail:last-child::after {
     bottom: 54px;
+    right: 3px;
   }
   .action__wrapper {
     padding-bottom: 28px;

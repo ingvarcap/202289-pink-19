@@ -23,6 +23,12 @@
   background-image: url("../img/logo-pink-blue-mobile.svg");
   background-repeat: no-repeat;
 }
+.page-footer__link-main:hover::before {
+  background-image: url("../img/logo-pink-blue-mobile--hover.svg");
+}
+.page-footer__link-main:active::before {
+  opacity: 0.3;
+}
 .social__list {
   display: flex;
   justify-content: space-between;
@@ -42,6 +48,12 @@
   height: 50px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+}
+.social__link:hover {
+  border: 3px solid #283645;
+}
+.social__link:active {
+  opacity: 0.3;
 }
 .social__link--twitter::before {
   position: absolute;
@@ -98,6 +110,12 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
 }
+.development__link:hover::before {
+  background-image: url("../img/htmlacademy--hover.svg");
+}
+.development__link:active::before {
+  opacity: 0.3;
+}
 @media (min-width: 660px) {
   .page-footer {
     flex-direction: row;
@@ -107,6 +125,7 @@
   }
   .page-footer--index {
     display: flex;
+    margin: 10px auto;
   }
   .page-footer__link-main {
     padding-bottom: 0;
@@ -115,6 +134,12 @@
   .page-footer__link-main::before {
     top: 0;
     left: 0;
+  }
+  .page-footer__link-main:hover::before {
+    background-image: url("../img/logo-pink-blue-mobile--hover.svg");
+  }
+  .page-footer__link-main:active::before {
+    opacity: 0.3;
   }
   .social__list {
     display: flex;
@@ -153,6 +178,9 @@
     margin: 88px auto;
     padding: 0;
   }
+  .page-footer--index {
+    margin: 54px auto;
+  }
   .page-footer--form {
     margin: 0 auto;
   }
@@ -163,6 +191,12 @@
     top: -16px;
     left: 0;
     background-image: url("../img/logo-pink-blue-desktop.svg");
+  }
+  .page-footer__link-main:hover::before {
+    background-image: url("../img/logo-pink-white-desktop--hover.svg");
+  }
+  .page-footer__link-main:active::before {
+    opacity: 0.3;
   }
   .social__list {
     padding: 0;
