@@ -273,8 +273,8 @@ input[placeholder] {
 }
 
 .link-wrapper__link {
-  padding: 18px 46px;
   margin: 0 0 37px 0;
+  padding: 18px 46px;
   display: block;
   width: 280px;
   font-size: 18px;
@@ -308,7 +308,7 @@ input[placeholder] {
   text-transform: uppercase;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   input[placeholder] {
     padding: 17px 0 16px 19px;
   }
@@ -534,7 +534,7 @@ input[placeholder] {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: @desktop-width) {
   .form__description {
     flex-direction: row;
     justify-content: space-between;

@@ -278,8 +278,8 @@ input[placeholder] {
   align-items: center;
 }
 .link-wrapper__link {
-  padding: 18px 46px;
   margin: 0 0 37px 0;
+  padding: 18px 46px;
   display: block;
   width: 280px;
   font-size: 18px;

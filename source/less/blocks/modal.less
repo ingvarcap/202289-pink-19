@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .modal {
   display: none;
   width: 320px;
@@ -79,7 +81,7 @@
   border: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .modal {
     width: 460px;
   }
@@ -126,7 +128,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: @desktop-width) {
   .modal {
     width: 785px;
   }

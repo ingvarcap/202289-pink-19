@@ -21,11 +21,11 @@
   background-color: #ffffff;
 }
 .comments-list__item {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
 }
 .photo-user__intro {
   margin: 0 auto;
@@ -39,6 +39,12 @@
   background-image: url("../img/panorama-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .photo-user__container-main {
+    background-image: url("../img/panorama-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 .photo-user__container-wrapper {
   width: 280px;
@@ -55,10 +61,10 @@
   }
 }
 .photo-user__img-day {
-  display: block;
   margin-left: auto;
   margin-right: 0;
   padding: 6px 19px;
+  display: block;
   width: 140px;
   font-size: 12px;
   font-weight: 700;
@@ -86,21 +92,21 @@
 }
 .comments-list__counter {
   position: relative;
-  font-size: 12px;
-  color: #d22856;
-  text-transform: uppercase;
   margin: 0;
   padding-top: 2px;
   padding-left: 32px;
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
 }
 .comments-list__counter::before {
   position: absolute;
-  content: "";
-  background-image: url("../img/icon-heart.svg");
-  width: 13px;
-  height: 11px;
   top: 10px;
   left: 0;
+  width: 13px;
+  height: 11px;
+  content: "";
+  background-image: url("../img/icon-heart.svg");
 }
 .photo-user__prison {
   line-height: 30px;
@@ -147,12 +153,12 @@
   }
   .comments-list__comments--main::before {
     position: absolute;
-    content: "";
-    background-image: url("../img/icon-heart.svg");
-    width: 13px;
-    height: 11px;
     top: 7px;
     right: 15px;
+    width: 13px;
+    height: 11px;
+    content: "";
+    background-image: url("../img/icon-heart.svg");
   }
   .comments-list__comments--main .comments-list__counter--main {
     position: absolute;
@@ -163,15 +169,15 @@
     background-image: none;
   }
   .comments-list__item-article {
+    margin: 23px 13px 25px 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin: 23px 13px 25px 28px;
   }
   .comments-list__item {
-    width: 300px;
     margin-bottom: 20px;
+    width: 300px;
     min-height: 455px;
   }
   .comments-list__item-main {
@@ -212,6 +218,12 @@
     padding-bottom: 70px;
   }
 }
+@media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .photo-user__container-main {
+    background-image: url("../img/panorama-tablet@2x.jpg");
+    background-size: 700px auto;
+  }
+}
 @media (min-width: 960px) {
   .comments-list {
     margin-bottom: 0;
@@ -240,15 +252,21 @@
     min-height: 95px;
   }
   .comments-list__item-article {
+    margin: 23px 13px 25px 28px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 23px 13px 25px 28px;
   }
   .comments-list__comments--main {
     margin-bottom: 0;
   }
   .comments-list__img {
     height: 400px;
+  }
+}
+@media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .photo-user__container-main {
+    background-image: url("../img/panorama-desktop@2x.jpg");
+    background-size: 1200px auto;
   }
 }

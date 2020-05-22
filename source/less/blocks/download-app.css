@@ -21,10 +21,14 @@
   font-weight: 300;
 }
 .download-app__wrapper {
-  width: 280px;
   margin: 0 auto;
+  width: 280px;
 }
 .download-app__btn {
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 32px;
+  padding: 14px 35px;
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: #1d2631;
@@ -33,10 +37,6 @@
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  padding: 14px 35px;
-  margin: 0 auto;
-  margin-top: 36px;
-  margin-bottom: 32px;
   border: 3px solid #ffffff;
   border-radius: 45px;
 }
@@ -52,15 +52,16 @@
   margin-top: 29px;
 }
 .list-systems {
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0 38px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  margin-bottom: 21px;
-  padding: 0 38px;
 }
 .list-system__item-link {
+  margin: 0 auto;
   display: block;
   background-color: #1d2631;
   font-size: 18px;
@@ -68,22 +69,20 @@
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  margin: 0 auto;
 }
 .download-app__variant-systems {
+  margin: 0 0 32px 0;
+  padding: 0;
   font-weight: 300;
   text-align: center;
-  margin: 0;
-  margin-bottom: 32px;
-  padding: 0;
 }
 @media (min-width: 660px) {
   .download-app {
     width: 280px;
     margin: 0 auto;
+    margin-top: -380px;
     align-items: flex-start;
     background-color: transparent;
-    margin-top: -380px;
   }
   .download-app__wrapper {
     margin-right: auto;
@@ -98,6 +97,10 @@
     background-color: transparent;
   }
   .download-app__btn {
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 47px;
+    padding: 13px 30px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -105,30 +108,24 @@
     text-align: center;
     background-color: transparent;
     width: 300px;
-    padding: 13px 30px;
-    margin: 0 auto;
-    margin-top: 33px;
-    margin-bottom: 47px;
   }
   .main-nav--closed .download-app__btn {
     margin-top: 28px;
   }
   .list-systems {
-    width: 205px;
-    margin: 0;
-    margin-left: 47px;
-    margin-bottom: 37px;
+    margin: 0 0 37px 47px;
     padding: 0;
+    width: 205px;
   }
   .list-system__item-link {
     background-color: transparent;
   }
   .download-app__variant-systems {
+    margin: 0;
+    margin-right: auto;
     font-size: 18px;
     font-weight: 300;
     width: 300px;
-    margin: 0;
-    margin-right: auto;
   }
 }
 @media (min-width: 660px) and (min-width: 660px) {
@@ -143,39 +140,39 @@
 }
 @media (min-width: 960px) {
   .download-app {
+    margin-top: -407px;
     background-image: none;
     background-color: transparent;
-    margin-top: -407px;
   }
   .download-app__btn {
-    font-size: 21px;
-    line-height: 18px;
     margin: 0;
     margin-right: auto;
     padding: 17px 0;
+    font-size: 21px;
+    line-height: 18px;
   }
   .download-app__slogan {
     background-image: none;
   }
   .download-app__wrapper {
-    width: 100%;
     margin-right: auto;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    width: 100%;
   }
   .list-systems {
-    display: flex;
-    justify-content: space-between;
-    width: 202px;
     margin-left: 50px;
     margin-right: auto;
     margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    width: 202px;
   }
   .download-app__variant-systems {
-    width: 300px;
     margin: 0;
     margin-right: auto;
     margin-top: 54px;
+    width: 300px;
   }
 }

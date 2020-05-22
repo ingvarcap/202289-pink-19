@@ -1,11 +1,25 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .container {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+}
 .processing-photo {
   background-color: #f2f2f2;
 }
 .processing-photo__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   width: 280px;
 }
 .processing-photo__image {
@@ -17,10 +31,10 @@
   align-items: center;
 }
 .tools-list {
-  display: flex;
-  justify-content: space-around;
   margin: 0;
   padding: 0 0 90px 0;
+  display: flex;
+  justify-content: space-around;
   width: 240px;
 }
 .tools-list__btn {
@@ -87,11 +101,11 @@
   display: none;
 }
 .button-list {
+  margin: 0;
+  padding: 13px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 13px 0 0 0;
   width: 100%;
   border-top: 1px solid #dddfe0;
 }
@@ -101,8 +115,8 @@
   font-weight: 700;
 }
 .button-list__btn-post {
-  padding: 17px 90px;
   margin: 0 0 10px 0;
+  padding: 17px 90px;
   width: inherit;
   font-size: 18px;
   line-height: 18px;
@@ -119,8 +133,8 @@
   color: #e08195;
 }
 .button-list__btn-cancel {
-  padding: 17px 102px;
   margin: 0 0 40px 0;
+  padding: 17px 102px;
   width: inherit;
   font-size: 18px;
   line-height: 18px;
@@ -139,11 +153,11 @@
 }
 @media (min-width: 660px) {
   .processing__wrapper {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
     width: 620px;
   }
   .processing-photo__wrapper {
@@ -151,10 +165,10 @@
     width: 300px;
   }
   .processing-photo__wrapper-list {
+    margin-left: 42px;
     display: flex;
     flex-direction: column;
     width: 280px;
-    margin-left: 42px;
   }
   .processing-photo__image {
     padding: 0;
@@ -236,8 +250,8 @@
 @media (min-width: 960px) {
   .processing-photo {
     margin: 0 auto;
-    width: 940px;
     padding: 0;
+    width: 940px;
   }
   .processing__wrapper {
     margin: 0 auto;

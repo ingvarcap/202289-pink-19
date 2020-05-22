@@ -1,3 +1,17 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .container {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+}
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -7,9 +21,9 @@
   display: none;
 }
 .page-footer__link-main {
+  margin: 54px 0 23px 0;
   display: block;
   position: relative;
-  margin: 54px 0 23px 0;
   width: 147px;
   height: 41px;
 }
@@ -30,10 +44,10 @@
   opacity: 0.3;
 }
 .social__list {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0 0 38px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .social__item {
   padding-right: 13px;
@@ -57,38 +71,38 @@
 }
 .social__link--twitter::before {
   position: absolute;
-  width: 18px;
-  height: 15px;
   top: 15px;
   left: 13px;
+  width: 18px;
+  height: 15px;
   content: "";
   background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
 }
 .social__link--facebook::before {
   position: absolute;
-  width: 9px;
-  height: 19px;
   top: 13px;
   left: 16px;
+  width: 9px;
+  height: 19px;
   content: "";
   background-image: url("../img/icon-facebook.svg");
   background-repeat: no-repeat;
 }
 .social__link--youtube::before {
   position: absolute;
-  width: 15px;
-  height: 14px;
   top: 16px;
   left: 17px;
+  width: 15px;
+  height: 14px;
   content: "";
   background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
 }
 .page-footer__development {
+  padding: 0 0 50px 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 0 50px 0;
   align-items: center;
 }
 .development__team {
@@ -118,18 +132,18 @@
 }
 @media (min-width: 660px) {
   .page-footer {
+    padding: 7px 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 0;
   }
   .page-footer--index {
     display: flex;
     margin: 10px auto;
   }
   .page-footer__link-main {
-    padding-bottom: 0;
     margin: 22px 0 23px 0;
+    padding-bottom: 0;
   }
   .page-footer__link-main::before {
     top: 0;
@@ -142,12 +156,12 @@
     opacity: 0.3;
   }
   .social__list {
+    margin: 0;
+    padding: 5px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 5px 0 0 0;
     width: 225px;
   }
   .social__item:first-child {
@@ -158,9 +172,9 @@
     padding: 0;
   }
   .development__team {
-    display: block;
     margin-left: 62px;
     padding: 10px 0 0 0;
+    display: block;
   }
   .development__link {
     width: 43px;
