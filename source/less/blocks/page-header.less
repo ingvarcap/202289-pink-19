@@ -13,13 +13,29 @@
 
 .main-nav__logo-block {
   height: 70px;
-  padding: 20px 20px;
+  padding: 22px 20px;
 }
 
 .main-nav__logo-block .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+  width: 75px;
+  height: 23px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/logo-pink-white-mobile--hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list {
@@ -49,6 +65,14 @@
 
 .site-list__item-link {
   color: #ffffff;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle {
@@ -83,6 +107,22 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover::before {
+    background-color: #d22856;
+  }
+
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__logo-block {
@@ -105,17 +145,26 @@
 
 .main-nav--closed .main-nav__toggle {
   position: relative;
-}
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -14px;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 rgb(255, 255, 255);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -14px;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 rgb(255, 255, 255);
+  }
+
+  &:hover::before {
+    background-color: #d22856;
+    box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 rgb(210, 40, 86);
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .page-header__slogan {
@@ -187,6 +236,16 @@
   .page-header {
     position: relative;
     background-image: none;
+  }
+
+  .page-header__logo {
+    width: 154px;
+    height: 48px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-tablet--hover.svg");
+    }
   }
 
   .page-header__slogan {
@@ -270,6 +329,16 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 154px;
+    height: 48px;
+    background-image: url("../img/logo-pink-white-desktop.svg");
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-desktop--hover.svg");
+    }
   }
 
   .page-header--photo__header h1 {

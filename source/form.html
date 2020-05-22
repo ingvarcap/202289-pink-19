@@ -10,20 +10,12 @@
   <body>
     <header class="page-header page-header--photo">
       <nav class="main-nav main-nav--photo main-nav--opened main-nav--nojs">
-        <!--Добавил блок menu, для того чтобы расположить хедер на десктопной верстке, по хорошему,
-        это должен быть nav, в котором не должно быть лишних элементов-->
         <div class="menu">
           <div class="menu-wrapper__main">
             <div class="menu-wrapper">
               <div class="main-nav__logo-block">
                 <div class="inner">
-                  <a href="index.html" class="page-header__logo" >
-                    <picture>
-                      <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
-                      <source srcset="img/logo-pink-white-tablet.svg"  media="(min-width: 660px)">
-                      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Логотип сайта PINK">
-                    </picture>
-                  </a>
+                  <a href="index.html" class="page-header__logo"></a>
                   <button class="main-nav__toggle" type="button"></button>
                 </div>
               </div>
@@ -54,121 +46,153 @@
     </header>
     <main class="page-main">
       <section class="form">
-        <p class="form__preview inner">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-        <p class="form__preview-add">Пожалуйста, заполните форму ниже:</p>
-        <form class="form__description" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="form__description-profile profile inner">
-            <p class="profile__data">
-              <label class="profile__name" for="family">фамилия:</label>
-              <input class="profile__info" type="text" name="family" id="family" placeholder="Укажите фамилию *" required="">
-            </p>
-            <p class="profile__data">
-              <label class="profile__name" for="name">имя:</label>
-              <input class="profile__info" type="text" name="name" id="name" placeholder="Введите ваше имя *" required="">
-            </p>
-            <p class="profile__data">
-              <label class="profile__name" for="patronymic">отчество:</label>
-              <input class="profile__info" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required="">
+        <div class="form__wrapper">
+          <div class="preview__wrapper">
+            <p class="form__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+              <span class="form__preview-add">Пожалуйста, заполните форму ниже:</span>
             </p>
           </div>
-          <div class="form__action action">
-            <h2 class="visually-hidden">достижения в путешествии</h2>
-            <div class="inner">
-              <p class="action__header">ваши безбашенные достижения в путешествии</p>
-              <div class="action__wrapper">
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="shark" value="" id="shark" checked>
-                  <label class="action__name" for="shark">Сделал селфи с акулой</label>
+          <form class="form__description" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form__description-profile profile">
+              <div class="profile__wrapper">
+                <p class="profile__data">
+                  <label class="profile__name" for="family">Фамилия:</label>
+                  <input class="profile__info" type="text" name="family" id="family" placeholder="Укажите фамилию *" required="">
                 </p>
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="beach" value="" id="beach" checked>
-                  <label class="action__name" for="beach">Обгорел на пляже</label>
+                <p class="profile__data">
+                  <label class="profile__name" for="name">Имя:</label>
+                  <input class="profile__info" type="text" name="name" id="name" placeholder="Введите ваше имя *" required="">
                 </p>
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="Chuck" value="" id="Chuck">
-                  <label class="action__name" for="Chuck">Видел Чака Норриса</label>
-                </p>
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="souvenirs" value="" id="souvenirs">
-                  <label class="action__name" for="souvenirs">Накупил сувениров</label>
-                </p>
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="tower" value="" id="tower" checked>
-                  <label class="action__name" for="tower">Удержал башню</label>
-                </p>
-                <p class="action__data">
-                  <input class="action__data-info" type="checkbox" name="hotel" value="" id="hotel">
-                  <label class="action__name" for="hotel">Разгромил отель</label>
+                <p class="profile__data">
+                  <label class="profile__name" for="patronymic">Отчество:</label>
+                  <input class="profile__info" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required="">
                 </p>
               </div>
             </div>
-          </div>
-          <div class="form__contacts contacts-data inner">
-            <p class="contacts-data__tel">
-                <label class="contacts-data__name" for="tel">номер телефона</label>
-                <input class="contacts-data__number" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" required="">
-            </p>
-            <p class="contacts-data__mail">
-              <label class="contacts-data__name" for="email">адрес почты</label>
-              <input class="contacts-data__email" type="email" name="email" id="email" placeholder="Введите почту *" required="">
-            </p>
-          </div>
-          <div class="form__system system">
-            <h2 class="visually-hidden">Операционная система для PINK</h2>
-              <p class="system__question">с каким приложением вы путешествовали?</p>
-              <p class="system__item">
-                <input class="system__info" type="radio" name="iOS" value="" id="iOS" checked>
-                <label class="system__name" for="iOS"> Pink для iOS</label>
-              </p>
-              <p class="system__item">
-                <input class="system__info" type="radio" name="android" value="" id="android">
-                <label class="system__name" for="android"> Pink на Android</label>
-              </p>
-              <p class="system__item">
-                <input class="system__info" type="radio" name="windows" value="" id="windows">
-                <label class="system__name" for="windows"> Windows phone</label>
-              </p>
-          </div>
-          <div class="form__comments comments inner">
-            <h2 class="visually-hidden">Оценка приложения PINK</h2>
-            <p class="comments__preview">опишите свои эмоции</p>
-            <textarea class="comments__description" cols="33" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-          <div class="form__link-wrapper link-wrapper inner">
-            <a class="link-wrapper__link" href="#">отправить форму</a>
-            <p class="link-wrapper__note"><span class="link-wrapper__star">*</span> — Обязательные поля</p>
-          </div>
-        </form>
+            <fieldset class="form__action action">
+              <legend class="action__header">Ваши безбашенные достижения в путешествии</legend>
+              <h2 class="visually-hidden">Достижения в путешествии</h2>
+              <div class="inner">
+                <div class="action__wrapper">
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="shark" value="" id="shark" checked>
+                    <label class="action__name" for="shark">Сделал селфи с акулой</label>
+                  </p>
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="beach" value="" id="beach" checked>
+                    <label class="action__name" for="beach">Обгорел на пляже</label>
+                  </p>
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="Chuck" value="" id="Chuck">
+                    <label class="action__name" for="Chuck">Видел Чака Норриса</label>
+                  </p>
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="souvenirs" value="" id="souvenirs">
+                    <label class="action__name" for="souvenirs">Накупил сувениров</label>
+                  </p>
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="tower" value="" id="tower" checked>
+                    <label class="action__name" for="tower">Удержал башню</label>
+                  </p>
+                  <p class="action__data">
+                    <input class="action__data-info" type="checkbox" name="hotel" value="" id="hotel">
+                    <label class="action__name" for="hotel">Разгромил отель</label>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__contacts contacts-data inner">
+              <legend class="contacts__info">Контактная информация</legend>
+              <div class="contacts-data__wrapper">
+                <p class="contacts-data__tel">
+                  <label class="contacts-data__name" for="tel">Номер телефона</label>
+                  <input class="contacts-data__number" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" required="">
+                </p>
+                <p class="contacts-data__mail">
+                  <label class="contacts-data__name" for="email">Адрес почты</label>
+                  <input class="contacts-data__email" type="email" name="email" id="email" placeholder="Введите почту *" required="">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__system system">
+              <legend class="system__question">С каким приложением путешествовали?</legend>
+              <div class="system__wrapper">
+                <h2 class="visually-hidden">Операционная система для PINK</h2>
+                <p class="system__item">
+                  <input class="system__info"  type="radio"  id="iOS" name="system" value="" checked>
+                  <label class="system__name" for="iOS"> Pink для iOS</label>
+                </p>
+                <p class="system__item">
+                  <input class="system__info" type="radio"  id="android" name="system" value="">
+                  <label class="system__name" for="android"> Pink на Android</label>
+                </p>
+                <p class="system__item">
+                  <input class="system__info" type="radio"  id="windows" name="system" value="">
+                  <label class="system__name" for="windows"> Windows Phone</label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__comments comments inner">
+              <legend class="comments__preview">Опишите свои эмоции</legend>
+              <h2 class="visually-hidden">Оценка приложения PINK</h2>
+              <textarea class="comments__description" cols="33" rows="13" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="form__link-wrapper link-wrapper inner">
+              <a class="link-wrapper__link" href="#">Отправить форму</a>
+              <p class="link-wrapper__note"><span class="link-wrapper__star">*</span> — Обязательные <span class="link-wrapper__full">для заполнения</span> поля</p>
+            </div>
+          </form>
+        </div>
       </section>
-    </main>
-    <footer class="page-footer inner">
-      <img class="page-footer__logo" src="../img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-twitter.svg" alt="Twitter">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-facebook.svg" alt="Facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy">
-              <img class="social__link-img" src="../img/icon-youtube.svg" alt="Youtube">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__development development">
-        <span class="development__team">Разработано</span>
-        <a href="https://htmlacademy.ru" class="development__link">
-          <img  class="development__link-img" src="../img/htmlacademy.svg" alt="Логотип HTMLAcademy">
-        </a>
-      </div>
-    </footer>
+      <section class="popup">
+        <div class="modal modal__disabled">
+          <div class="modal__wrapper-text">
+            <p class="modal__head">
+              Что-то пошло не так!
+            </p>
+            <p class="modal__recommendation">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+          </div>
+          <div class="modal__wrapper-btn">
+            <button class="modal__btn">Ок</button>
+          </div>
+        </div>
+        <div class="modal modal__enabled">
+          <div class="modal__wrapper-text">
+            <p class="modal__head">
+              Ваша заявка отправлена
+            </p>
+            <p class="modal__recommendation">
+              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <span>оповестим</span> вас.
+            </p>
+          </div>
+          <div class="modal__wrapper-btn">
+            <button class="modal__btn">Закрыть окно</button>
+          </div>
+        </div>
+      </section>
+      </main>
+      <footer class="page-footer page-footer--form inner">
+        <a href="index.html" class="page-footer__link-main"></a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__development development">
+          <span class="development__team">Разработано</span>
+          <a href="https://htmlacademy.ru" class="development__link"></a>
+        </div>
+      </footer>
       <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');

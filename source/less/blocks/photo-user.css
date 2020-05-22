@@ -17,12 +17,13 @@
   padding: 0;
 }
 .comments-list {
+  margin-bottom: 45px;
   background-color: #ffffff;
 }
 .comments-list__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
@@ -102,7 +103,11 @@
   left: 0;
 }
 .photo-user__prison {
+  line-height: 30px;
   text-align: center;
+}
+.photo-user__prison:last-child {
+  padding-bottom: 44px;
 }
 .comments-list__img {
   width: 100%;
@@ -128,25 +133,55 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .comments-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .comments-list__comments {
     padding: 0;
   }
+  .comments-list__comments--main {
+    position: relative;
+    margin: 21px 13px 27px 28px;
+  }
+  .comments-list__comments--main::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    width: 13px;
+    height: 11px;
+    top: 7px;
+    right: 15px;
+  }
+  .comments-list__comments--main .comments-list__counter--main {
+    position: absolute;
+    top: 0;
+    right: 46px;
+  }
+  .comments-list__comments--main .comments-list__counter--main::before {
+    background-image: none;
+  }
   .comments-list__item-article {
-    height: 150px;
-    padding: 22px 13px 25px 28px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 23px 13px 25px 28px;
   }
   .comments-list__item {
     width: 300px;
+    margin-bottom: 20px;
+    min-height: 455px;
   }
   .comments-list__item-main {
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 0;
     width: 620px;
+    min-height: 120px;
   }
-  .comments-list__item-article-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .comments-list__item picture {
+    height: 300px;
   }
   .comments-list__item-article-wrapper .comments-list__counter {
     padding-right: 46px;
@@ -156,28 +191,35 @@
     top: 9px;
     right: 16px;
   }
-  .comments-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 620px;
-  }
   .comments-list__img {
     height: 300px;
     max-height: 510px;
   }
+  .comments-list__counter {
+    position: relative;
+    margin-top: auto;
+    padding: 0;
+  }
   .comments-list__counter::before {
+    position: absolute;
     top: 6px;
-    right: 19px;
+    left: 228px;
+  }
+  .photo-user__prison {
+    font-size: 18px;
+  }
+  .photo-user__prison:last-child {
+    padding-bottom: 70px;
   }
 }
 @media (min-width: 960px) {
   .comments-list {
+    margin-bottom: 0;
     width: 940px;
   }
   .photo-user__intro {
     margin: 0 auto;
-    padding: 90px 0 86px 0;
+    padding: 90px 0 87px 0;
     width: 575px;
   }
   .photo-user__container-main {
@@ -186,14 +228,25 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .comments-list__item {
+    margin-bottom: 53px;
+    min-height: 555px;
+  }
+  .comments-list__item picture {
+    height: 400px;
+  }
   .comments-list__item-main {
     width: 940px;
+    min-height: 95px;
   }
-  .comments-list__item {
-    margin-bottom: 55px;
+  .comments-list__item-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 23px 13px 25px 28px;
   }
   .comments-list__comments--main {
-    height: 95px;
+    margin-bottom: 0;
   }
   .comments-list__img {
     height: 400px;

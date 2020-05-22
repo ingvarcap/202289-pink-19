@@ -103,7 +103,7 @@
   background-size: 100%;
 }
 .bonus-list__item-unlim:nth-child(3)::before {
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-green.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -143,7 +143,7 @@
   content: "";
   width: 33px;
   height: 25px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-green.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -156,6 +156,9 @@
   width: 60px;
 }
 .slider__toggle-btn--price-offers {
+  background-color: #f2f2f2;
+}
+.slider__toggles-item .slider__toggle-btn--active {
   background-color: #f2f2f2;
 }
 @media (min-width: 660px) {

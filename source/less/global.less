@@ -1,20 +1,18 @@
 * {
-  webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 *::before {
-  webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 *::after {
-  webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
-  webkit-box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 24px;
@@ -22,12 +20,12 @@ html {
   background-color: #ffffff;
   color: #1d2631;
   min-width: 280px;
-  margin: 0 auto;
-  padding: 0;
   overflow-x: hidden;
 }
 
 body {
+  margin: 0 auto;
+  padding: 0;
   font-family: "Opensans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -35,8 +33,6 @@ body {
   background-color: #ffffff;
   color: #1d2631;
   min-width: 280px;
-  margin: 0 auto;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -58,38 +54,49 @@ button {
   outline: none;
 }
 
+input {
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active) {
+  border: 0;
+  padding: 0;
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
-  webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .inner {
-  width: 280px;
   margin: 0 auto;
   padding: 0;
+  width: 280px;
 }
 
 @media (min-width: 660px) {
   .inner {
-    width: 620px;
     margin: 0 auto;
     padding: 0;
+    width: 620px;
   }
 }
 
 @media (min-width: 960px) {
   .inner {
-    width: 940px;
     margin: 0 auto;
     padding: 0;
+    width: 940px;
   }
 }

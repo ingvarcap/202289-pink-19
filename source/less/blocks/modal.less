@@ -1,0 +1,165 @@
+.modal {
+  display: none;
+  width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 8px -5px #000000;
+  z-index: 100;
+}
+
+.modal__disabled,
+.modal__enabled {
+  position: fixed;
+}
+
+.modal__disabled {
+  top: 5%;
+  left: calc(50% - 160px);
+}
+
+.modal__enabled {
+  top: 45%;
+  left: calc(50% - 160px);
+}
+
+.modal__wrapper-text {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal__head {
+  margin: 0;
+  padding: 45px 0 30px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.modal__recommendation {
+  margin: 0;
+  padding: 0 0 45px 0;
+  text-align: center;
+}
+
+.modal__enabled .modal__recommendation {
+  padding: 0 0 35px 0;
+  width: 270px;
+}
+
+.modal__recommendation span {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.modal__disabled .modal__wrapper-btn {
+  background-color: #ffffff;
+  padding: 0 0 50px 0;
+}
+
+.modal__enabled .modal__wrapper-btn {
+  padding: 45px 0 50px 0;
+  background-color: #f2f2f2;
+}
+
+.modal__btn {
+  margin: 0 auto;
+  padding: 16px 0;
+  display: block;
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border-radius: 3px;
+  border: none;
+}
+
+@media (min-width: 660px) {
+  .modal {
+    width: 460px;
+  }
+
+  .modal__disabled {
+    top: 10%;
+    left: calc(50% - 230px);
+  }
+
+  .modal__enabled {
+    top: 50%;
+    left: calc(50% - 230px);
+  }
+
+  .modal__wrapper-text {
+    width: 320px;
+  }
+
+  .modal__head {
+    padding: 45px 50px 35px 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__recommendation {
+    padding: 0 0 40px 0;
+    font-size: 18px;
+  }
+
+  .modal__enabled .modal__recommendation {
+    width: 310px;
+  }
+
+  .modal__recommendation span {
+    padding: 0;
+  }
+
+  .modal__wrapper-btn {
+    padding: 50px 0 50px 0;
+  }
+
+  .modal__btn {
+    width: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modal {
+    width: 785px;
+  }
+
+  .modal__disabled {
+    top: 10%;
+    left: calc(50% - 390px);
+  }
+
+  .modal__enabled {
+    top: 50%;
+    left: calc(50% - 390px);
+  }
+
+  .modal__disabled .modal__wrapper-text {
+    width: 350px;
+  }
+
+  .modal__enabled .modal__wrapper-text {
+    width: 400px;
+  }
+
+  .modal__head {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .modal__recommendation {
+    padding-bottom: 60px;
+  }
+
+  .modal__disabled .modal__wrapper-btn {
+    background-color: #f2f2f2;
+    padding: 50px 0 50px 0;
+  }
+}
