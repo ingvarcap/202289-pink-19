@@ -134,7 +134,7 @@
   border: 3px solid #b5b9be;
 }
 .button-list__btn-cancel:active {
-  color: c4c6c8;
+  color: #c4c6c8;
   background-color: #b5b9be;
 }
 @media (min-width: 660px) {
