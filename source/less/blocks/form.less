@@ -113,12 +113,12 @@ input[placeholder] {
 .action__data {
   margin: 0;
   padding: 0;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
 }
 
 .action__name {
   position: relative;
-  padding-left: 20px;
+  padding-left: 18px;
 
   &::before {
     position: absolute;
@@ -310,7 +310,7 @@ input[placeholder] {
 
 @media (min-width: @tablet-width) {
   input[placeholder] {
-    padding: 17px 0 16px 19px;
+    padding: 16px 0 16px 19px;
   }
 
   .form {
@@ -421,7 +421,6 @@ input[placeholder] {
 
   .contacts-data__tel,
   .contacts-data__mail {
-    margin: 0 auto;
     padding: 36px 0 0 0;
     display: flex;
     flex-direction: column-reverse;
@@ -438,7 +437,7 @@ input[placeholder] {
 
     &::before {
       position: absolute;
-      bottom: 89px;
+      top: 60px;
       right: 22px;
       content: "";
       width: 20px;
@@ -451,7 +450,7 @@ input[placeholder] {
 
     &::after {
       position: absolute;
-      bottom: 67px;
+      top: 38px;
       right: 2px;
       content: "";
       width: 62px;
@@ -466,7 +465,7 @@ input[placeholder] {
 
     &::before {
       position: absolute;
-      bottom: 91px;
+      top: 27px;
       right: 22px;
       content: "";
       width: 19px;
@@ -479,7 +478,7 @@ input[placeholder] {
 
     &::after {
       position: absolute;
-      bottom: 67px;
+      top: 2px;
       right: 2px;
       content: "";
       width: 62px;
@@ -608,23 +607,23 @@ input[placeholder] {
   }
 
   .contacts-data__tel::before {
-    bottom: 78px;
+    top: 60px;
     right: 22px;
   }
 
   .contacts-data__mail:last-child::before {
-    bottom: 79px;
-    right: 25px;
+    top: 62px;
+    right: 22px;
   }
 
   .contacts-data__tel::after {
-    bottom: 54px;
+    top: 38px;
     right: 2px;
   }
 
   .contacts-data__mail:last-child::after {
-    bottom: 54px;
-    right: 3px;
+    top: 38px;
+    right: 2px;
   }
 
   .action__wrapper {

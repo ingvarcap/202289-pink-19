@@ -87,10 +87,7 @@
   .download-app__wrapper {
     margin-right: auto;
     margin-left: 0;
-    margin-bottom: 115px;
-  }
-  .main-nav--closed .download-app__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 108px;
   }
   .download-app__slogan {
     background-image: none;
@@ -113,7 +110,7 @@
     margin-top: 28px;
   }
   .list-systems {
-    margin: 0 0 37px 47px;
+    margin: 0 0 35px 47px;
     padding: 0;
     width: 205px;
   }

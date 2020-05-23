@@ -47,6 +47,7 @@ button {
 }
 input {
   outline: none;
+  -webkit-appearance: none;
 }
 input:hover {
   border: 2px solid #283645;

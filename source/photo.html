@@ -12,7 +12,7 @@
       <nav class="main-nav main-nav--photo main-nav--opened main-nav--nojs">
         <div class="menu">
           <div class="menu-wrapper__main">
-            <div class="menu-wrapper">
+            <div class="menu-wrapper__logo">
               <div class="main-nav__logo-block">
                 <div class="inner">
                   <a href="index.html" class="page-header__logo"></a>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <ul class="photo-user__list comments-list inner">
-          <li class="comments-list__item comments-list__item-main">
+          <li class="comments-list__item comments-list__item--main">
             <article class="comments-list__item-article comments-list__comments--main">
               <div class="comments-list__wrapper-head">
                 <span class="comments-list__name">Анна</span>
@@ -198,14 +198,16 @@
                 <button class="tools-list__toggle"></button>
               </li>
             </ul>
-            <ul class="processing-photo__button button-list">
-              <li class="button-list__item">
-                <button class="button-list__btn button-list__btn-post" type="button">Запостить</button>
-              </li>
-              <li class="button-list__item">
-                <button class="button-list__btn button-list__btn-cancel" type="button">Отмена</button>
-              </li>
-            </ul>
+            <form  class="processing-photo__form" action="https://echo.htmlacademy.ru" method="POST">
+              <ul class="processing-photo__button button-list" >
+                <li class="button-list__item">
+                  <button class="button-list__btn button-list__btn-post" type="button">Запостить</button>
+                </li>
+                <li class="button-list__item">
+                  <button class="button-list__btn button-list__btn-cancel" type="button">Отмена</button>
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </section>
