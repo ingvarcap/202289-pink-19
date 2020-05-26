@@ -1938,7 +1938,7 @@ input:active {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .photo-user__container-main {
     background-image: url("../img/panorama-mobile@2x.jpg");
-    background-size: 320px cover;
+    background-size: cover;
   }
 }
 .photo-user__container-wrapper {
@@ -2135,7 +2135,7 @@ input:active {
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .photo-user__container-main {
     background-image: url("../img/panorama-tablet@2x.jpg");
-    background-size: 700px cover;
+    background-size: cover;
   }
 }
 @media (min-width: 960px) {
