@@ -14,12 +14,14 @@
 }
 .page-header {
   color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.webp");
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
+    background-image: url("../img/bg-back-mobile@2x.webp");
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
@@ -124,12 +126,14 @@
   background-color: #283645;
 }
 .main-nav--opened .page-header__slogan {
+  background-image: url("../img/iphone-hand-mobile@1x.webp"), url("../img/bg-back-mobile@1x.webp");
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: auto, cover;
   background-position: left bottom, center bottom;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-nav--opened .page-header__slogan {
+    background-image: url("../img/iphone-hand-mobile@2x.webp"), url("../img/bg-back-mobile@2x.webp");
     background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
     background-size: 258px auto, cover;
   }
@@ -168,6 +172,7 @@
   line-height: 30px;
   font-weight: 300;
   text-align: center;
+  background-image: url("../img/iphone-hand-mobile@1x.webp");
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: auto;
   background-repeat: no-repeat;
@@ -175,6 +180,7 @@
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header__slogan {
+    background-image: url("../img/iphone-hand-mobile@2x.webp");
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
   }
@@ -189,6 +195,7 @@
 }
 .main-nav--opened .page-header--photo__header {
   width: 100%;
+  background-image: url("../img/bg-back-mobile@1x.webp");
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,12 +203,13 @@
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-nav--opened .page-header--photo__header {
+    background-image: url("../img/bg-back-mobile@2x.webp");
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 .page-header--photo__header h1 {
   margin: 0 auto;
-  padding: 33px 20px 0;
+  padding: 28px 20px 0;
   height: 171px;
   width: 280px;
   font-size: 24px;
@@ -212,6 +220,7 @@
 @media (min-width: 660px) {
   .main-nav {
     position: relative;
+    background-image: url("../img/bg-back-tablet@1x.webp");
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -260,6 +269,7 @@
     margin-top: 28px;
   }
   .main-nav__wrapper {
+    background-image: url("../img/iphone-hand-tablet@1x.webp");
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -268,12 +278,14 @@
     background-image: none;
   }
   .main-nav--opened .main-nav__wrapper {
+    background-image: url("../img/iphone-hand-tablet@1x.webp"), url("../img/bg-back-tablet@1x.webp");
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto, auto;
   }
   .main-nav--opened .page-header--photo__header {
     width: 100%;
+    background-image: url("../img/bg-back-tablet@1x.webp");
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,6 +304,7 @@
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-nav {
+    background-image: url("../img/bg-back-tablet@2x.webp");
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: 1200px 100%;
   }
@@ -308,18 +321,21 @@
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-nav__wrapper {
+    background-image: url("../img/iphone-hand-tablet@2x.webp");
     background-image: url("../img/iphone-hand-tablet@2x.png");
     background-size: 700px auto;
   }
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-nav--opened .main-nav__wrapper {
+    background-image: url("../img/iphone-hand-tablet@2x.webp"), url("../img/bg-back-tablet@2x.webp");
     background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
     background-size: 700px auto, 1200px auto;
   }
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-nav--opened .page-header--photo__header {
+    background-image: url("../img/bg-back-tablet@2x.webp");
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: 1200px auto;
   }
@@ -363,6 +379,7 @@
     padding-left: 30px;
     font-size: 50px;
     line-height: 60px;
+    background-image: url("../img/iphone-hand-desktop@1x.webp");
     background-image: url("../img/iphone-hand-desktop@1x.png");
     height: 745px;
     background-position: left -15% bottom;
@@ -383,6 +400,7 @@
   }
   .main-nav {
     height: 855px;
+    background-image: url("../img/bg-back-desktop@1x.webp");
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -436,12 +454,14 @@
 }
 @media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .main-nav--opened .page-header__slogan {
+    background-image: url("../img/iphone-hand-desktop@2x.webp");
     background-image: url("../img/iphone-hand-desktop@2x.png");
     background-size: 1050px auto;
   }
 }
 @media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .main-nav {
+    background-image: url("../img/bg-back-desktop@2x.webp");
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2600px auto;
   }

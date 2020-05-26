@@ -40,7 +40,7 @@ fieldset {
   border: 0 none;
 }
 .form__preview {
-  padding: 50px 0 36px 0;
+  padding: 46px 0 36px 0;
 }
 .form__preview-add {
   display: none;
@@ -63,7 +63,7 @@ fieldset {
 .contacts-data__tel,
 .contacts-data__mail {
   margin: 0;
-  padding: 0 0 18px 0;
+  padding: 0 0 17px 0;
 }
 .profile__data:last-child,
 .contacts-data__tel:last-child,
@@ -76,6 +76,7 @@ input[placeholder] {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  border-radius: 3px;
 }
 .profile__info,
 .contacts-data__number,
@@ -135,7 +136,7 @@ input[placeholder] {
 .action__data {
   margin: 0;
   padding: 0;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
 }
 .action__name {
   position: relative;
@@ -150,6 +151,7 @@ input[placeholder] {
   height: 39px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  border-radius: 2px;
 }
 .action__name:hover::before {
   border: 2px solid #283645;
@@ -256,13 +258,14 @@ input[placeholder] {
   opacity: 1;
 }
 .comments__preview {
-  padding: 39px 0 14px 0;
+  padding: 34px 0 14px 0;
 }
 .comments__description {
   margin: 0 auto;
   margin-bottom: 45px;
   width: 280px;
   border: 2px solid #e5e5e5;
+  border-radius: 3px;
 }
 .comments__description::placeholder {
   padding: 19px 20px 0 20px;
@@ -271,13 +274,13 @@ input[placeholder] {
   line-height: 30px;
   color: #283645;
 }
-.link-wrapper {
+.button-wrapper {
   padding-bottom: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.link-wrapper__link {
+.button-wrapper__btn {
   margin: 0 0 37px 0;
   padding: 18px 46px;
   display: block;
@@ -290,26 +293,31 @@ input[placeholder] {
   border: 1px solid transparent;
   border-radius: 3px;
 }
-.link-wrapper__link:hover {
+.button-wrapper__btn:hover {
   background-color: #1c9b5e;
 }
-.link-wrapper__link:active {
+.button-wrapper__btn:active {
   background-color: #1c9b5e;
   color: #7dbd99;
 }
-.link-wrapper__star {
+.button-wrapper__btn:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+.button-wrapper__star {
   color: #d22856;
 }
-.link-wrapper__full {
+.button-wrapper__full {
   display: none;
 }
-.link-wrapper__note {
+.button-wrapper__note {
   margin: 0;
   text-transform: uppercase;
 }
 @media (min-width: 660px) {
   input[placeholder] {
-    padding: 16px 0 16px 19px;
+    padding: 17px 0 16px 19px;
+    line-height: 26px;
   }
   .form {
     display: flex;
@@ -376,6 +384,7 @@ input[placeholder] {
   .comments__preview {
     padding: 0 25px;
     transform: translateY(0);
+    margin: 0 auto;
   }
   .system__question {
     width: 380px;
@@ -399,7 +408,8 @@ input[placeholder] {
   }
   .contacts-data__tel,
   .contacts-data__mail {
-    padding: 36px 0 0 0;
+    margin: 0 auto;
+    padding: 38px 0 0 0;
     display: flex;
     flex-direction: column-reverse;
     width: 500px;
@@ -425,11 +435,11 @@ input[placeholder] {
   }
   .contacts-data__tel::after {
     position: absolute;
-    top: 38px;
+    top: 40px;
     right: 2px;
     content: "";
-    width: 62px;
-    height: 62px;
+    width: 59px;
+    height: 59px;
     background-color: #e5e5e5;
   }
   .contacts-data__mail:last-child {
@@ -438,7 +448,7 @@ input[placeholder] {
   }
   .contacts-data__mail:last-child::before {
     position: absolute;
-    top: 27px;
+    top: 25px;
     right: 22px;
     content: "";
     width: 19px;
@@ -453,8 +463,8 @@ input[placeholder] {
     top: 2px;
     right: 2px;
     content: "";
-    width: 62px;
-    height: 62px;
+    width: 59px;
+    height: 59px;
     background-color: #e5e5e5;
   }
   .action {
@@ -480,16 +490,19 @@ input[placeholder] {
     margin: 33px 59px 37px 59px;
     width: 500px;
   }
-  .link-wrapper {
+  .button-wrapper {
     margin-top: 14px;
     flex-direction: row;
     justify-content: space-between;
   }
-  .link-wrapper__link {
+  .button-wrapper__btn {
+    width: 300px;
+  }
+  .button-wrapper__link {
     padding: 18px 56px;
     width: 300px;
   }
-  .link-wrapper__note {
+  .button-wrapper__note {
     padding-bottom: 38px;
   }
 }
@@ -561,12 +574,16 @@ input[placeholder] {
     right: 22px;
   }
   .contacts-data__tel::after {
-    top: 38px;
+    top: 40px;
     right: 2px;
   }
   .contacts-data__mail:last-child::after {
-    top: 38px;
+    top: 40px;
     right: 2px;
+  }
+  .action,
+  .comments {
+    width: 940px;
   }
   .action__wrapper {
     padding-bottom: 28px;
@@ -613,7 +630,7 @@ input[placeholder] {
     width: 820px;
     margin: 0 60px;
   }
-  .link-wrapper__full {
+  .button-wrapper__full {
     display: inline;
   }
 }

@@ -113,6 +113,7 @@
     margin: 0;
     padding-bottom: 36px;
     order: -1;
+    width: 620px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -145,6 +146,9 @@
   .feedback__wrapper-slider {
     position: relative;
   }
+  .slider__content {
+    width: 700px;
+  }
   .feedback__wrapper-button {
     position: absolute;
     display: block;
@@ -168,7 +172,7 @@
   }
   .feedback__wrapper-button-right {
     top: 28px;
-    right: -119px;
+    right: -140px;
     background-image: url("../img/icon-review-arrow-right.svg");
   }
   .feedback__wrapper-button-right:hover {
