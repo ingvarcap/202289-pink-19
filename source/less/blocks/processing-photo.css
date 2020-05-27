@@ -113,16 +113,15 @@
   width: 100%;
 }
 .button-list__btn {
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
 }
 .button-list__btn-post {
   margin: 0 0 10px 0;
-  padding: 17px 90px;
+  padding: 17px 88px;
   width: inherit;
-  font-size: 18px;
-  line-height: 18px;
   color: #d22856;
   background-color: transparent;
   border: 3px solid #d22856;
@@ -137,10 +136,8 @@
 }
 .button-list__btn-cancel {
   margin: 0 0 40px 0;
-  padding: 17px 102px;
+  padding: 17px 100px;
   width: inherit;
-  font-size: 18px;
-  line-height: 18px;
   color: #e3e4e4;
   background-color: transparent;
   border: 3px solid #dddfe0;

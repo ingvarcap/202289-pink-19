@@ -187,7 +187,7 @@
 .main-nav--closed .page-header__slogan p {
   margin-top: 20px;
 }
-.main-nav--opened .page-header--photo__header {
+.main-nav--opened .main-nav__page-header--photo__header {
   width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -195,11 +195,11 @@
   background-position: center 25%;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .main-nav--opened .page-header--photo__header {
+  .main-nav--opened .main-nav__page-header--photo__header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
-.page-header--photo__header h1 {
+.main-nav__page-header--photo__header h1 {
   margin: 0 auto;
   padding: 28px 20px 0;
   height: 171px;
@@ -267,14 +267,14 @@
   .main-nav--opened .page-header__slogan {
     background-image: none;
   }
-  .main-nav--opened .page-header--photo__header {
+  .main-nav--opened .main-nav__page-header--photo__header {
     width: 100%;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 25%;
   }
-  .page-header--photo__header h1 {
+  .main-nav__page-header--photo__header h1 {
     padding: 73px 20px 0;
     width: 660px;
     height: 330px;
@@ -308,7 +308,7 @@
   }
 }
 @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
-  .main-nav--opened .page-header--photo__header {
+  .main-nav--opened .main-nav__page-header--photo__header {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: 1200px auto;
   }
@@ -318,7 +318,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .menu-wrapper__main {
+  .menu__menu-wrapper-main {
     width: 280px;
     margin: 0 auto;
     display: flex;
@@ -326,7 +326,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .main-nav--opened .page-header--photo__header {
+  .main-nav--opened .main-nav__page-header--photo__header {
     margin: 0 auto;
     background-image: none;
     width: 100%;
@@ -340,11 +340,11 @@
   .page-header__logo:hover {
     background-image: url("../img/logo-pink-white-desktop--hover.svg");
   }
-  .page-header--photo__header h1 {
+  .main-nav__page-header--photo__header h1 {
     padding: 68px 20px 0;
     height: 280px;
   }
-  .page-header--photo__header--contest h1 {
+  .main-nav__page-header--photo__header--contest h1 {
     width: 940px;
   }
   .main-nav--opened .page-header__slogan {
@@ -414,12 +414,12 @@
   }
 }
 @media (min-width: 960px) and (min-width: 660px) {
-  .menu-wrapper__main {
+  .menu__menu-wrapper-main {
     width: 620px;
   }
 }
 @media (min-width: 960px) and (min-width: 960px) {
-  .menu-wrapper__main {
+  .menu__menu-wrapper-main {
     width: 940px;
   }
 }

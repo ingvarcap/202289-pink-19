@@ -187,7 +187,7 @@
   }
   .contacts__map {
     height: 500px;
-    background-image: url("../bg-map-desktop@1x.webp"), url("../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: top center, bottom 40% center;
   }
   .contacts__map::after {
@@ -206,7 +206,7 @@
 }
 @media (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background-image: url("../bg-map-desktop@2x.webp"), url("../img/bg-map-desktop@2x.jpg");
+    background-image: url("../img/bg-map-desktop@2x.jpg");
     background-size: 100%;
   }
 }
