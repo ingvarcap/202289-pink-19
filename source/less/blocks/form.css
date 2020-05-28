@@ -325,7 +325,7 @@ input[placeholder] {
     display: flex;
     flex-direction: column;
   }
-  .preview__wrapper {
+  .form__preview-wrapper {
     padding-bottom: 69px;
     display: flex;
     flex-direction: column;
@@ -524,7 +524,7 @@ input[placeholder] {
     flex-wrap: wrap;
     align-items: flex-end;
   }
-  .preview__wrapper {
+  .form__preview-wrapper {
     width: 940px;
   }
   .form__preview {

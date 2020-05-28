@@ -150,11 +150,11 @@
   .comments-list__comments {
     padding: 0;
   }
-  .comments-list__comments--main {
+  .comments-list-item-article--main {
     position: relative;
     margin: 21px 13px 27px 28px;
   }
-  .comments-list__comments--main::before {
+  .comments-list-item-article--main::before {
     position: absolute;
     top: 7px;
     right: 15px;
@@ -163,12 +163,12 @@
     content: "";
     background-image: url("../img/icon-heart.svg");
   }
-  .comments-list__comments--main .comments-list__counter--main {
+  .comments-list-item-article--main .comments-list__counter--main {
     position: absolute;
     top: 0;
     right: 46px;
   }
-  .comments-list__comments--main .comments-list__counter--main::before {
+  .comments-list-item-article--main .comments-list__counter--main::before {
     background-image: none;
   }
   .comments-list__item-article {
@@ -263,7 +263,7 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .comments-list__comments--main {
+  .comments-list-item-article--main {
     margin-bottom: 0;
   }
   .comments-list__link {

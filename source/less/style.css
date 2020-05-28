@@ -603,7 +603,7 @@ input:active {
   justify-content: space-between;
   align-items: center;
 }
-.list-system__item-link {
+.list-systems__item-link {
   margin: 0 auto;
   display: block;
   background-color: #1d2631;
@@ -657,7 +657,7 @@ input:active {
     padding: 0;
     width: 205px;
   }
-  .list-system__item-link {
+  .list-systems__item-link {
     background-color: transparent;
   }
   .download-app__variant-systems {
@@ -1061,7 +1061,7 @@ input:active {
   flex-direction: column;
   align-items: center;
 }
-.slider__item {
+.slider-list__item {
   position: relative;
   text-align: center;
 }
@@ -1072,10 +1072,10 @@ input:active {
   font-weight: 700;
   color: #000000;
 }
-.slider__age-profession {
+.slider-list__age-profession {
   display: none;
 }
-.slider__content {
+.slider-list__content {
   line-height: 30px;
 }
 .feedback__toggles-list {
@@ -1143,14 +1143,14 @@ input:active {
     align-items: center;
     width: 620px;
   }
-  .slider__content {
+  .slider-list__content {
     margin: 0;
     padding-bottom: 36px;
     order: -1;
     font-size: 18px;
     line-height: 30px;
   }
-  .slider__age-profession {
+  .slider-list__age-profession {
     padding-bottom: 19px;
     display: block;
   }
@@ -1217,7 +1217,7 @@ input:active {
   .slider__name {
     font-size: 24px;
   }
-  .slider__age-profession {
+  .slider-list__age-profession {
     font-size: 18px;
   }
   .feedback__toggles-list {
@@ -1232,13 +1232,13 @@ input:active {
   background-size: auto;
   background-repeat: no-repeat;
 }
-.price-slider__name {
+.price-slider-list__item {
   margin: 0;
   padding-top: 16px;
   font-size: 18px;
   font-weight: 700;
 }
-.price-slider__price {
+.price-slider__list-price {
   padding-bottom: 20px;
   display: block;
   font-size: 24px;
@@ -1410,11 +1410,11 @@ input:active {
   .price-slider__item:last-child {
     border-right: 4px solid #e5e5e5;
   }
-  .price-slider__name {
+  .price-slider-list__item {
     padding-top: 15px;
     font-size: 16px;
   }
-  .price-slider__price {
+  .price-slider__list-price {
     padding-bottom: 10px;
     font-size: 16px;
   }
@@ -1469,7 +1469,7 @@ input:active {
     background-position: top center;
     background-size: 100%;
   }
-  .price-slider__price,
+  .price-slider__list-price,
   .price-slider__list {
     width: 940px;
   }
@@ -1502,7 +1502,7 @@ input:active {
     top: 16px;
     left: 100px;
   }
-  .price-slider__price {
+  .price-slider__list-price {
     font-size: 24px;
     padding-bottom: 21px;
   }
@@ -1839,11 +1839,11 @@ input:active {
   .comments-list__comments {
     padding: 0;
   }
-  .comments-list__comments--main {
+  .comments-list-item-article--main {
     position: relative;
     margin: 21px 13px 27px 28px;
   }
-  .comments-list__comments--main::before {
+  .comments-list-item-article--main::before {
     position: absolute;
     top: 7px;
     right: 15px;
@@ -1852,12 +1852,12 @@ input:active {
     content: "";
     background-image: url("../img/icon-heart.svg");
   }
-  .comments-list__comments--main .comments-list__counter--main {
+  .comments-list-item-article--main .comments-list__counter--main {
     position: absolute;
     top: 0;
     right: 46px;
   }
-  .comments-list__comments--main .comments-list__counter--main::before {
+  .comments-list-item-article--main .comments-list__counter--main::before {
     background-image: none;
   }
   .comments-list__item-article {
@@ -1949,7 +1949,7 @@ input:active {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .comments-list__comments--main {
+  .comments-list-item-article--main {
     margin-bottom: 0;
   }
   .comments-list__img {
@@ -2105,7 +2105,7 @@ input:active {
   background-color: #b5b9be;
 }
 @media (min-width: 660px) {
-  .processing__wrapper {
+  .processing-photo__wrapper-main {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -2206,7 +2206,7 @@ input:active {
     padding: 0;
     width: 940px;
   }
-  .processing__wrapper {
+  .processing-photo__wrapper-main {
     margin: 0 auto;
     padding: 52px 0 55px 0;
     width: 860px;
@@ -2813,7 +2813,7 @@ input[placeholder] {
     display: flex;
     flex-direction: column;
   }
-  .preview__wrapper {
+  .form__preview-wrapper {
     padding-bottom: 69px;
     display: flex;
     flex-direction: column;
@@ -3007,7 +3007,7 @@ input[placeholder] {
     flex-wrap: wrap;
     align-items: flex-end;
   }
-  .preview__wrapper {
+  .form__preview-wrapper {
     width: 940px;
   }
   .form__preview {
